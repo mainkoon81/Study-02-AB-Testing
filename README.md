@@ -70,3 +70,4 @@ When performing more than one hypothesis test, your type-I error compounds. In o
    - Type II. (Says True, but H0 actually False) Novelty Effect or `false negatives`: Existing users may give an unfair advantage to the new version, because they’re excited or drawn to the change, even if it isn’t any better in the long run.
 
 
+
