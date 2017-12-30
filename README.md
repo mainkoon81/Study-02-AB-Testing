@@ -1,6 +1,4 @@
 # Study-AB-Testing
-
-
 ## Intro: SO...Not Enough Samples ? 
 #### Estimation techniques for finding "good statistics"
  - Maximum Likelihood Estimation
@@ -84,9 +82,31 @@ plt.axvline(x=diff_upper, color='r', linewidth=2);
 ```
 
 # 2) Simulating From the Null Hypothesis
-__* 
- 
- 
+
+__*We assume the Null is true, then see what the sampling distribution would look like if we were to simulate (from) the closest value under the Null (to) the Alternative. In this case, we simulate from a "Normal Distribution" because by the central limit theorem.  
+
+ - Let's say
+<img src="https://user-images.githubusercontent.com/31917400/34455227-605ab9b0-ed72-11e7-82b9-d8df9c0babbf.jpg" />  
+
+ - The hypothesized mean at 70 and the SD of our sampling distribution would follow it. 
+
+ - First, Get the SD
+``` 
+df_samp = df.sample(200)
+
+mu_pool = []
+for i in range(10000):
+    bootsamp = df_samp.sample(200, replace=True)
+    mu_pool.append(bootsamp.query('drinks_coffee==True')['height'].mean())
+        
+np.std(mu_pool)
+```
+ - Next, 10,000 Sampling from ~ N(mu, SD, size=10000)
+```
+null_vals = np.random.normal(70, np.std(mu_pool), 10000)
+plt.hist(null_vals)
+```
+ - Now we can ask a question "where the sample mean falls in this distribution ?" With our sample mean so far out in the tail, it's far enough that we don't think it probably came from this Null hypothesized value.  
  
  
  
