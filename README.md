@@ -106,8 +106,19 @@ np.std(mu_pool)
 null_vals = np.random.normal(70, np.std(mu_pool), 10000)
 plt.hist(null_vals)
 ```
- - Now we can ask a question "where the sample mean falls in this distribution ?" With our sample mean so far out in the tail, it's far enough that we don't think it probably came from this Null hypothesized value.  
- 
+ - Now we can ask a question "where the sample mean falls in this distribution ?" 
+```
+sample_mean = df_samp.query('drinks_coffee==True')['height'].mean()
+plt.hist(null_vals)
+plt.axvline(sample_mean, color='r')
+```
+<img src="https://user-images.githubusercontent.com/31917400/34455271-62f4bdaa-ed73-11e7-9b0c-5b1ad4971d38.jpg" width="300" height="200" /> 
+ - With our sample mean so far out in the tail, we intuitively (by eyeballing) we don't reject HO.
+ - The definition of a p-value is the probability of the acception of null hypothesis. It is the area created by the t-statistics of the data. If we calculate 'P-value' here, the result is 1.0 
+```
+(null_vals > df_samp.query('drinks_coffee==True')['height'].mean()).mean() 
+```
+Note here, '<>' direction follows that of 'H1' 
  
  
 
