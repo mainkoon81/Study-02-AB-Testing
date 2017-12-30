@@ -113,7 +113,8 @@ plt.hist(null_vals)
 plt.axvline(sample_mean, color='r')
 ```
 <img src="https://user-images.githubusercontent.com/31917400/34455271-62f4bdaa-ed73-11e7-9b0c-5b1ad4971d38.jpg" width="300" height="200" /> 
- - With our sample mean so far out in the tail, we intuitively (by eyeballing) we don't reject HO.
+
+ - With our sample mean so far out in the tail, we intuitively (by eyeballing) we don't reject H0.
  - The definition of a p-value is the probability of the acception of null hypothesis. It is the area created by the t-statistics of the data. If we calculate 'P-value' here, the result is 1.0 
 ```
 (null_vals > df_samp.query('drinks_coffee==True')['height'].mean()).mean() 
