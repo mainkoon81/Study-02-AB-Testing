@@ -24,7 +24,7 @@
  - __Using C.I:__ where we simulate sampling distribution of our statistics, then we could see if our hypothesis is consistent with what we observe in the sampling distribution.  
  - __Simulating what we believe to be a possible under the H0,__ then seeing if our data is consistent with that.  
 
-#### 1) Using C.I & Bootstrapping
+# 1) Using C.I & Bootstrapping
 __*When estimating population parameters, we build the confidence intervals.__
  - Basically;
    - Increasing your sample size will decrease the width of your confidence interval (by the law of large numbers).
@@ -83,7 +83,7 @@ plt.axvline(x=diff_lower, color='r', linewidth=2)
 plt.axvline(x=diff_upper, color='r', linewidth=2);
 ```
 
-#### 2) Simulating From the Null Hypothesis
+# 2) Simulating From the Null Hypothesis
 __* 
  
  
