@@ -122,17 +122,17 @@ plt.axvline(sample_mean, color='r')
 Note here, '<>' direction follows that of 'H1'. For example,  
 <img src="https://user-images.githubusercontent.com/31917400/34455473-c3cc5abc-ed77-11e7-9fe2-78e0c605842e.jpg" />  
 ```
-(null_vals < coffee_red.query('drinks_coffee==True')['height'].mean()).mean() 
+(null_vals < df_samp.query('drinks_coffee==True')['height'].mean()).mean() 
 ```
 but
 <img src="https://user-images.githubusercontent.com/31917400/34455494-50db9274-ed78-11e7-94f0-aa2d6bc0a4a7.jpg" />  
 ```
 null_mean=70
+sample_mean = df_samp.query('drinks_coffee==True')['height'].mean()
 
-(null_vals < coffee_red.query('drinks_coffee==True')['height'].mean()).mean() + (null_vals > null_mean + (null_mean-sample_mean)).mean()
+(null_vals < df_samp.query('drinks_coffee==True')['height'].mean()).mean() + (null_vals > null_mean + (null_mean-sample_mean)).mean()
 ```
  
-
 ## What if our sample is large?
 One of the most important aspects of interpreting any statistical results (and one that is frequently overlooked) is assuring that your sample is **truly representative** of your population of interest. Particularly in the way that data is collected today in the age of computers, `response bias` is so important to keep in mind. In the 2016 U.S election, polls conducted by many news media suggested a staggering difference from the reality of poll results. 
 > Two things to consider
