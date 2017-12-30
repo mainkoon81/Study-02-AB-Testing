@@ -12,22 +12,30 @@
 
 > Machine learning techniques: It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
-#### CI & Hypothesis_test 
-
+#### C.I, Not-Enough-Samples and Hypothesis_testing
 *When estimating population parameters, we build the confidence intervals.
  - Basically;
    - Increasing your sample size will decrease the width of your confidence interval (by the law of large numbers).
    - Increasing your confidence level (say 95% to 99%) will increase the width of your confidence interval. 
- - Capturing pop-mean/proportion
+ - C.I. that Capturing pop-mean/proportion
 <img src="https://user-images.githubusercontent.com/31917400/34266269-6c003960-e670-11e7-857f-3a755839c4b9.jpg" width="200" height="150" />  
 
- - Capturing the difference in pop-mean/proportion
-<img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" />  
+ - C.I. that Capturing the difference in pop-mean/proportion
+<img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" /> 
 
-All of these formula have underlying "assumptions" (Central Limit Theorem regarding the distribution of statistics) that may or maynot be true. But Bootstrapping does not have the assumptions of these intervals. Bootstrapping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same result.    
+ - C.I. with t-test as the Traditional mean comparison method - ex>"height"
+```
+import statsmodels.stats.api as sm
+X1 = df_boot[df_boot['A'] == True]['height'] 
+X2 = df_boot[df_boot['A'] == False]['height']
+
+cm = sm.CompareMeans(sm.DescrStatsW(X1), sm.DescrStatsW(X2))
+cm.tconfint_diff(usevar='unequal')
+```
+All of these formula have underlying "assumptions" (Central Limit Theorem - regarding the sampling distribution ie.the distribution of statistics) that may or maynot be true. But **Bootstrapping** does not need the assumptions of these intervals. Bootstrapping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same Confidence Interval.    
 
 __1> Bootstrapping and C.I.__
-
+ - We just use a bootstrapping to build a confidence interval !
 
 
 
