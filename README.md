@@ -125,7 +125,12 @@ Note here, '<>' direction follows that of 'H1'. For example,
 (null_vals < coffee_red.query('drinks_coffee==True')['height'].mean()).mean() 
 ```
 but
+<img src="https://user-images.githubusercontent.com/31917400/34455494-50db9274-ed78-11e7-94f0-aa2d6bc0a4a7.jpg" />  
+```
+null_mean=70
 
+(null_vals < coffee_red.query('drinks_coffee==True')['height'].mean()).mean() + (null_vals > null_mean + (null_mean-sample_mean)).mean()
+```
  
 
 ## What if our sample is large?
