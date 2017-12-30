@@ -67,7 +67,7 @@ A_lower, A_upper = np.percentile(A_means, 2.5), np.percentile(A_means, 97.5)
 B_lower, B_upper = np.percentile(B_means, 2.5), np.percentile(B_means, 97.5)
 diff_lower, diff_upper = np.percentile(diffs, 2.5), np.percentile(diffs, 97.5)
 ```
- - See the distribution of parameters and see if the H0 can be rejected
+ - See the distribution of parameters and see if the H0 can be rejected. Does H0 is within the bound? 
 ``` 
 plt.hist(A_means);
 plt.axvline(x=A_lower, color='r', linewidth=2)
