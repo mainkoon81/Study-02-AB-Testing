@@ -119,8 +119,13 @@ plt.axvline(sample_mean, color='r')
 ```
 (null_vals > df_samp.query('drinks_coffee==True')['height'].mean()).mean() 
 ```
-Note here, '<>' direction follows that of 'H1' 
- 
+Note here, '<>' direction follows that of 'H1'. For example,  
+<img src="https://user-images.githubusercontent.com/31917400/34455473-c3cc5abc-ed77-11e7-9fe2-78e0c605842e.jpg" />  
+```
+(null_vals < coffee_red.query('drinks_coffee==True')['height'].mean()).mean() 
+```
+but
+
  
 
 ## What if our sample is large?
