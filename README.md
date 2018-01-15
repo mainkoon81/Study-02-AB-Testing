@@ -7,17 +7,36 @@
  - Bayesian Estimation
  - *Aggregate approach (CI, Hypothesis_test)
  - Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
-> Confidence intervals and Hypothesis tests: It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
 
-> Machine learning techniques: It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
+> Confidence intervals and Hypothesis tests: 
+ - It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
 
-#### Hypothesis testing
- - Testing a population mean (One sample t-test).
- - Testing the difference in means (Two sample t-test)
- - Testing the difference before and after some treatment on an the same individual (Paired t-test)
- - Testing a population proportion (One sample z-test)
- - Testing the difference between population proportions (Two sample z-test)
- - ETC. instead of memorizing how to perform all of these tests, we can find the statistics that best estimates the parameter(s) we want to estimate, we can bootstrap to simulate the sampling distribution. Then we can use our sampling distribution to assist in choosing the appropriate hypothesis.
+> Machine learning techniques: 
+ - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
+
+#### Popular Questions
+ - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
+ - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables
+ - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric)
+ - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
+ - whether the variability of two samples differ => **F-test** (parametric) to compare the variances of two groups.
+
+#### Popular Hypothesis testing (when the data are normally distributed)
+ - 1.Testing a population mean (One sample t-test).
+ - 2.Testing the difference in means (Two sample t-test) with two independent samples
+ - 3.Testing the difference before and after some treatment on an the same individual (Paired t-test) with two dependent samples
+ - 4.Testing a population proportion (One sample z-test)
+ - 5.Testing the difference between population proportions (Two sample z-test)
+ - 6.Comparing the means of more than two groups (ANOVA Test)
+   - One-Way ANOVA Test
+   - Two-Way ANOVA Test 
+   - MANOVA Test (Multivariate Analysis of Variance)
+
+The t-test formula depends on the **mean** and the **SD** of the data. It's basic form is `(The obv - the argu) / SE` where **'SD'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **SD** and the **sample size**, thus by definition, **SE** is always smaller than the **SD**.   
+<img src="https://user-images.githubusercontent.com/31917400/34944917-503e2ff6-f9f9-11e7-9e0d-ab2f4db38047.jpg" />  
+
+## However, using our computer,
+#### Instead of memorizing how to perform all of these tests, we can find the statistics that best estimates the parameter(s) we want to estimate, we can bootstrap to simulate the sampling distribution. Then we can use our sampling distribution to assist in choosing the appropriate hypothesis.
  
 #### Once we set up 'H0', we need to use our data to figure out which hypothesis is true. There are two ways to choose. 
  - __Using C.I:__ where we simulate sampling distribution of our statistics, then we could see if our hypothesis is consistent with what we observe in the sampling distribution.  
