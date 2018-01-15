@@ -33,7 +33,7 @@
    - MANOVA Test (Multivariate Analysis of Variance)
 
 The t-test formula depends on the **mean** and the **SD** of the data. It's basic form is `(The obv - the argu) / SE` where **'SD'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **SD** and the **sample size**, thus by definition, **SE** is always smaller than the **SD**.   
-<img src="https://user-images.githubusercontent.com/31917400/34944917-503e2ff6-f9f9-11e7-9e0d-ab2f4db38047.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/34945069-df8f793a-f9f9-11e7-8372-3f00bab83b24.jpg" />  
 
 ## However, using our computer,
 #### Instead of memorizing how to perform all of these tests, we can find the statistics that best estimates the parameter(s) we want to estimate, we can bootstrap to simulate the sampling distribution. Then we can use our sampling distribution to assist in choosing the appropriate hypothesis.
