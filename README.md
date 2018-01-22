@@ -31,6 +31,8 @@
    - One-Way ANOVA Test
    - Two-Way ANOVA Test 
    - MANOVA Test (Multivariate Analysis of Variance)
+
+This gives t-statistics and P-value (with equal/unequal variance)
 ```
 import scipy.stats as stats
 
