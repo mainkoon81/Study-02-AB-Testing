@@ -33,7 +33,6 @@
    - MANOVA Test (Multivariate Analysis of Variance)
 ```
 import scipy.stats as stats
-import statsmodels.stats.api as sm
 
 stats.ttest_ind(df['A'], df['B'], equal_var = True)
 stats.ttest_ind(df.['A'], df['B'], equal_var = False)
