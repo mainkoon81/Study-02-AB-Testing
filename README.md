@@ -63,11 +63,10 @@ __*When estimating population parameters, we build the confidence intervals.__
  - C.I. with t-test as the Traditional mean comparison method with sampling - ex>"height"
 ```
 df_samp = df.sample(200)
-
-import statsmodels.stats.api as sm
 X1 = df_samp[df_samp[condition] == True]['height'] 
 X2 = df_samp[df_samp[condition] == False]['height']
 
+import statsmodels.stats.api as sm
 cm = sm.CompareMeans(sm.DescrStatsW(X1), sm.DescrStatsW(X2))
 cm.tconfint_diff(usevar='unequal')
 ```
