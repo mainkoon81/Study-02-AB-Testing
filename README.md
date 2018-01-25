@@ -14,6 +14,11 @@
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
+#### Statistical Test
+ - When we have large sample sizes (n > 30), and variance is known: **z-test**
+ - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
+ - Both methods assume a **normal distribution** of the data
+
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables
