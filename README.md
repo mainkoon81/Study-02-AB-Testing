@@ -41,8 +41,9 @@ This gives t-statistics and P-value (with equal/unequal variance)
 ```
 import scipy.stats as stats
 
-stats.ttest_ind(df['A'], df['B'], equal_var = True)
-stats.ttest_ind(df['A'], df['B'], equal_var = False)
+stats.ttest_1samp(a - b, popmean=0)  ## one sample ##
+stats.ttest_ind(df['A'], df['B'], equal_var = True)  ## two samples independent ##
+stats.ttest_rel(df['A'], df['B'])  ## Paired dependent ##
 ```
 The t-test formula depends on the **mean** and the **SD** of the data. It's basic form is `(The obv - the argu) / SE` where **'SD'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **SD** and the **sample size**, thus by definition, **SE** is always smaller than the **SD**.   
 <img src="https://user-images.githubusercontent.com/31917400/34945069-df8f793a-f9f9-11e7-8372-3f00bab83b24.jpg" />  
