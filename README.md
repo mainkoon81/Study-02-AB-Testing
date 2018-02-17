@@ -33,9 +33,15 @@
  - 4.Testing a population proportion (One sample z-test)
  - 5.Testing the difference between population proportions (Two sample z-test)
  - 6.Comparing the means of more than two groups (ANOVA Test)
-   - One-Way ANOVA Test
-   - Two-Way ANOVA Test 
+   - One-Way ANOVA Test (one predictors)
+     - Using the F distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)
+   - Two-Way ANOVA Test (two predictors)
+     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any interaction between them.
    - MANOVA Test (Multivariate Analysis of Variance)
+     - It helps to answer:
+       - Do changes in the independent variable(s) have significant effects on the dependent variables?
+       - What are the relationships among the dependent variables?
+       - What are the relationships among the independent variables?
 
 This gives t-statistics and P-value (with equal/unequal variance)
 ```
