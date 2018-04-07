@@ -56,7 +56,6 @@ stats.f_oneway(df['numeric_B'][index_dict['categ_values']], df['numeric_B'][inde
 
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
-
 formula = 'response ~ C(A) + C(B) + C(A):C(B)'
 model = ols(formula, df).fit()
 aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
