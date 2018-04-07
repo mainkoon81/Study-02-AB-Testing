@@ -50,6 +50,13 @@ import scipy.stats as stats
 stats.ttest_1samp(a - b, popmean=0)  ## one sample ##
 stats.ttest_ind(df['A'], df['B'], equal_var = True)  ## two samples independent ##
 stats.ttest_rel(df['A'], df['B'])  ## Paired dependent ##
+
+index_dict = df.groupby('categorical_A').groups  ## it's housing all index of 'numeric_B_values' under the name of 'categ_values'
+stats.f_oneway(df['numeric_B'][index_dict['categ_values']], df['numeric_B'][index_dict['categ_values']], ...) ## oneway ANOVA ##
+
+formula = 'response ~ C(A) + C(B) + C(A):C(B)'
+model = ols(formula, df).fit()
+aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
 ```
 The t-test formula depends on the **mean** and the **SD** of the data. It's basic form is `(The obv - the argu) / SE` where **'SD'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **SD** and the **sample size**, thus by definition, **SE** is always smaller than the **SD**.   
 <img src="https://user-images.githubusercontent.com/31917400/34945069-df8f793a-f9f9-11e7-8372-3f00bab83b24.jpg" />  
