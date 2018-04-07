@@ -17,7 +17,7 @@
 #### Statistical Test
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
  - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
- - Both methods assume a **normal distribution** of the data
+ - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
 
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
