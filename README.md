@@ -1,7 +1,7 @@
 # Study-AB-Testing
 
 ## [Intro: SO...Not Enough Samples ?] 
-#### Estimation techniques for finding "good statistics" aka 'population parameter'
+#### Estimation techniques for finding "good statistics" or 'population parameter'
  - Maximum Likelihood Estimation
  - Method of Moments Estimation
  - Bayesian Estimation
