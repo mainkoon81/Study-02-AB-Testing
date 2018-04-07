@@ -54,6 +54,9 @@ stats.ttest_rel(df['A'], df['B'])  ## Paired dependent ##
 index_dict = df.groupby('categorical_A').groups  ## it's housing all index of 'numeric_B_values' under the name of 'categ_values'
 stats.f_oneway(df['numeric_B'][index_dict['categ_values']], df['numeric_B'][index_dict['categ_values']], ...) ## oneway ANOVA ##
 
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+
 formula = 'response ~ C(A) + C(B) + C(A):C(B)'
 model = ols(formula, df).fit()
 aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
