@@ -18,7 +18,7 @@
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
  - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
-<img src="https://user-images.githubusercontent.com/31917400/38467875-fec4ce86-3b35-11e8-8e74-d00c9852837c.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
 #### Chi-Sqr test: 
  - In a contingency table(along cols: categories, along rows: each group), we want to know between two groups(rows), there is any significant difference..or between the groups(row) and the categorical variable(column), there is any association..(H0: No connection)
