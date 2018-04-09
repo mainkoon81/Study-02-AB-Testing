@@ -4,7 +4,7 @@
 #### Estimation techniques for finding "good statistics" or 'population parameter'
  - Maximum Likelihood Estimation
  - Method of Moments Estimation
- - Bayesian Estimation
+ - Bayesian Estimation (easier to communicate with audience than awkawrd frequentists' methods)
  - *Aggregate approach (CI, Hypothesis_test)
  - Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 
