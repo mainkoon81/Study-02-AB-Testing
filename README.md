@@ -26,6 +26,7 @@
  - Values in Chi-sqr Dist are always (+).
  - Like t-Dist, it only has one parameter: df
  - Location/Scale: 0 / 1 by default
+<img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
