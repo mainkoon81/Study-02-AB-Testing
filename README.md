@@ -20,6 +20,13 @@
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
 <img src="https://user-images.githubusercontent.com/31917400/38467875-fec4ce86-3b35-11e8-8e74-d00c9852837c.jpg" />  
 
+#### Chi-Sqr test: 
+ - In a contingency table(along cols: categories, along rows: each group), we want to know between two groups(rows), there is any significant difference..or between the groups(row) and the categorical variable(column), there is any association..(H0: No connection)
+ - if the accounts in the categories are binary(Bernulli) or multinary(A,B,C,D,F), and all values are playing with **frequency**...we first assume H0 is true, then ...
+ - Values in Chi-sqr Dist are always (+).
+ - Like t-Dist, it only has one parameter: df
+ - Location/Scale: 0 / 1 by default
+
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables
