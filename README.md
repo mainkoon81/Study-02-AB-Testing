@@ -6,7 +6,7 @@
  - Method of Moments Estimation
  - Bayesian Estimation (easier to communicate with audience than awkawrd frequentists' methods)
  - *Aggregate approach (CI, Hypothesis_test)
- - Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
+ - *Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 
 > Confidence intervals and Hypothesis tests: 
  - It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
