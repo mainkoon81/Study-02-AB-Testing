@@ -29,7 +29,7 @@
 <img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
  - What if we should compare more than 2 groups(2+ rows in a contingency table)?
-   - For P_Value: even running the same experiment twice, the odds to get significant p_value would increase...This is why Frequentist's methods are awkawrd...Here, we need to fix it using..
+   - For P_Value: even running the same experiment twice, the odds to get significant p_value would increase..(FP). This is why Frequentist's methods are awkawrd...Here, we need to fix it using..
      - Bonferroni's Correction: Alpha_new = Alpha / # of tests
    - For Method: 
      - **pairwise:** compare every group against every other group.
