@@ -50,7 +50,7 @@
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables
- - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric)
+ - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric: No need of Dist_Assumption)
  - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
  - whether the variability of two samples differ => **F-test** (parametric) to compare the variances of two groups.
 
