@@ -35,7 +35,18 @@
      - **pairwise:** compare every group against every other group.
        - Alpha_new = Alpha / choose(N,2)
      - **One VS the rest:** 
-     
+#### Statistical Power
+ - Power = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
+   - reject H0: 'pos'
+   - don't reject H0: 'neg'
+   - FP: 'type I' error, FPr=P(FP)
+   - FN: 'type II' error, FNr=P(FN)
+   - High power decreases the odds to get FN(type_II)
+ - Why quantify power ? 
+   - 2 keys: Effect_Size, Sample_Size
+   - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect
+   - Sample_Size: Power helps determine the sample size we need(by P_Value)
+
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables
