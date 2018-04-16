@@ -10,7 +10,14 @@
 
 > Confidence intervals and Hypothesis tests: 
  - It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values). 
- - **In ABtesting, the p-value of H0 (the odds for nondifference) is the parameter whe are seeking ?**  
+ - **In ABtesting, the p-value of H0 (the odds for nondifference) is the parameter we are seeking ?**  
+ - A/B testing is another name for "the significance test for two sample proportions" when it's used for comparing ClickThroughRates. 
+ - Two Prerequisites
+   - 1) **Test statistic** 
+   - 2) **Deriving its Null distribution**(the distribution of the test statistic under the assumption that the null hypothesis is true). 
+   - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true, but here the test statistic's null distribution is not t-distribution, but z-distribution.
+   - Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion. we can get z-statistics.
+   - CI is used to bridge the gap between statistical sampling of an event and measuring every single instance of it. It tells you how likely a small sample is to be correct when applied to the overall population. They are derived using 'the bell curve concept' and aim to figure out where most (95%) data would fall within 2 standard deviations from the mean. 
 
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
