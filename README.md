@@ -9,7 +9,7 @@
  - *Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 
 > Confidence intervals and Hypothesis tests: 
- - It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values).
+ - It takes an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters (which are aggregate population values). In ABtesting, the p-value of H0 (the odds for nondifference) is the parameter whe are seeking ?  
 
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
