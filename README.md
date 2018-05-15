@@ -75,8 +75,8 @@
 <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
    - Two-Way(factor) ANOVA Test (one response VS two predictors)
-     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any interaction between them.
-<img src="https://user-images.githubusercontent.com/31917400/40051072-541c7a4c-5831-11e8-91c6-7b293bff791f.jpg" />  
+     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any interaction between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
+<img src="https://user-images.githubusercontent.com/31917400/40051922-5a9fc8ee-5834-11e8-95c4-3945026a87cc.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
      - It helps to answer:
