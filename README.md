@@ -72,8 +72,11 @@
  - 6.Comparing the means of more than two groups (ANOVA Test)
    - One-Way(factor) ANOVA Test (one response VS one predictor)
      - Using the F distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
+<img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
+     
    - Two-Way(factor) ANOVA Test (one response VS two predictors)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any interaction between them.
+     
    - MANOVA Test (Multivariate Analysis of Variance)
      - It helps to answer:
        - Do changes in the independent variable(s) have significant effects on the dependent variables?
