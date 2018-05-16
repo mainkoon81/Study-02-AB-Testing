@@ -30,7 +30,9 @@
 <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
 #### Chi-Sqr test: 
- - In a contingency table(along cols: categories, along rows: each group), we want to know between two groups(rows), there is any significant difference..or between the groups(row) and the categorical variable(column), there is any association..(H0: No connection)
+ - In a contingency table(along cols: categories, along rows: each group), we want to know 
+   - between two groups(rows), there is any significant difference..or 
+   - between the groups(row) and the categorical variable(column), there is any association..(H0: No connection or independent, H1: dependent)
  - if the accounts in the categories are binary(Bernulli) or multinary(A,B,C,D,F), and all values are playing with **frequency**...we first assume H0 is true, then ...
    - Values in Chi-sqr Dist are always (+).
    - Like t-Dist, it only has one parameter: df
