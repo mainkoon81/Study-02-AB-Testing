@@ -17,8 +17,9 @@
  - **the p-value of H0 (the odds for rejection) is hinting about some information on our population parameter.**  
  - A/B testing is another name for "the significance test for two sample proportions" when it's used for comparing `ClickThroughRates`. 
  - Two Components
-   - 1) **Test statistic of H0** 
-   - 2) **Deriving its Null distribution**(the distribution of the test statistic under the assumption that the null hypothesis is true).
+   - 1) **Test statistic of H0** for example, `some point in the N(0,1)` 
+     - Your test statistics is all about `(obv - claim)/SE`  
+   - 2) **Deriving its Null distribution**(the distribution of the test statistic under the assumption that the null hypothesis is true) for example, `N(0,1)`
    - Placing the (SE)*(test statistics of H0) on the pdf chart of the Null and see where it is located. 
  - CI is used to bridge the gap between statistical sampling of an event and measuring every single instance of it. It tells you **how likely a small sample is to be correct when applied to the overall population.** They are derived using 'the bell curve concept' and aim to figure out **where most (95%) data would fall within 2 standard deviations from the mean.** 
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true, but here the test statistic's null distribution is not t-distribution, but z-distribution.
