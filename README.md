@@ -10,6 +10,7 @@
  - *Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 
 > Hypothesis tests and CI: 
+
 **Hypothesis tests**(Significance tests) take an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters(which are aggregate population values). A/B testing is another name for "the significance test for **two sample proportions**" when it's used for comparing `ClickThroughRates`. 
  - The critical region `α` (such as 0.10, 0.05, 0.01) for the hypothesis test is the region of rejection in the distribution. 
    - if one tailed (H0: `μ < sth`): `1 - cdf` < `α`
