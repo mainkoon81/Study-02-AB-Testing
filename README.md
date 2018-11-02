@@ -16,16 +16,18 @@
    - if one tailed (H0: `μ < sth`): `1 - cdf` < `α`
    - if two tailed (H0: `μ = sth`): `1 - cdf` < `α/2`(too big difference)
    - In `N(0,1)`, 1.64, 1.96, 2.58 are called `threshold Z_value` or `cut_off_value` pointing significance level of 90%, 95%, 99%, and the test statistics of H0 is just a `Z_value`. 
- - **p_value of H0, a probability value `1 - F(x) where x is my test statistics`, is hinting about some information on our population parameter.** Is it crossing the critical region `α` or not?  
+ - **p_value of H0, a probability value `1 - F(x) where x is my test statistics`, is hinting about some information on our population parameter.** Is it wider then critical region `α` or not?  
  - Two Components
    - 1) **Test statistic of H0** for example, `some point(Z_value) in the N(0,1)` 
      - Your test statistics is all about `(obv - claim)/SE`  
    - 2) **Deriving its Null distribution**(the distribution of the test statistic under the assumption that the null hypothesis is true) for example, `N(0,1)`
    - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
    
-**CI** is used to bridge the gap between statistical sampling of an event and measuring every single instance of it. It tells you **how likely a small sample is to be correct when applied to the overall population.** They are derived using 'the bell curve concept' and aim to figure out **where most (95%) data would fall within 2 standard deviations from the mean.** 
- - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true, but here the test statistic's null distribution is not t-distribution, but z-distribution.
- - ClickThroughRate ?? Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion. we can get z-statistics.
+**CI** is used to bridge the gap between statistical sampling of an event and measuring every single instance of it. It tells you **how likely a small sample is to be correct when applied to the overall population.** They are derived using 'the bell curve concept' and aim to figure out **where most (95%) data would fall within 2 standard deviations from the mean.**
+<img src="https://user-images.githubusercontent.com/31917400/47928414-29214980-debe-11e8-8e7f-4acdd4656050.jpg" />  
+
+ - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution. 
+ - `ClickThroughRates`?? Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
 
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
