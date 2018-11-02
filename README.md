@@ -24,7 +24,7 @@
    - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
    
 **CI** is used to bridge the gap between statistical sampling of an event and measuring every single instance of it. It tells you **how likely a small sample is to be correct when applied to the overall population.** They are derived using 'the bell curve concept' and aim to figure out **where most (95%) data would fall within 2 standard deviations from the mean.**
-<img src="https://user-images.githubusercontent.com/31917400/47928414-29214980-debe-11e8-8e7f-4acdd4656050.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/47932798-8b804700-deca-11e8-82b6-b5261d7bde47.jpg" />  
 
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution. 
  - `ClickThroughRates`?? Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
