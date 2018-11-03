@@ -67,10 +67,10 @@
    - While the sampling distribution of `mean` follows the `Normal`, the sampling distribution of `variance` follows the `Chi-Sqr`.  
    <img src="https://user-images.githubusercontent.com/31917400/47957744-c1e5c100-dfb3-11e8-8f46-dbef4064f2ab.jpg" /> 
    
-   - __From two samples:__
+__[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
+ - Is the variance the same for both soup brands?
+<img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />  
 
-   
-   
 #### Statistical Power
  - Power = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
    - reject H0: 'pos'
