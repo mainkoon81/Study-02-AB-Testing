@@ -63,9 +63,9 @@
    <img src="https://user-images.githubusercontent.com/31917400/47957077-9a88f700-dfa7-11e8-885f-d6830550de2d.jpg" />  
 
    - While the sampling distribution of `mean` follows the `Normal`, the sampling distribution of `variance` follows the `Chi-Sqr`.  
-   <img src="https://user-images.githubusercontent.com/31917400/47957231-02404180-dfaa-11e8-9e19-3da7fcb6d949.jpg" /> 
+   <img src="https://user-images.githubusercontent.com/31917400/47957558-f8b9d800-dfaf-11e8-9add-973e646adcf9.jpg" /> 
    
-   
+
    
    
 #### Statistical Power
