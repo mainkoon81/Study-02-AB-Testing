@@ -38,8 +38,8 @@
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
 <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
-#### Chi-Sqr test: 
- - > In a contingency table(along cols: categories, along rows: each group), we want to know 
+### Chi-Sqr test: 
+#### 1> In a contingency table `(along cols: categories, along rows: each group)`, we want to know 
    - between two groups(rows), there is any significant difference..in this case our **df** is `r-1`(NO.of variables to compare, one way)
    - between the groups(rows) and the categorical variable(columns), there is any association..(H0: No connection or independent, H1: dependent)..in this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
    
@@ -57,7 +57,7 @@
        - Alpha_new = Alpha / choose(N,2)
      - **One VS the rest:** 
      
- - > Population Variance Estimation
+#### 2> Population Variance Estimation
    - __From a single sample:__
  <img src="https://user-images.githubusercontent.com/31917400/47957643-d759eb80-dfb1-11e8-84c6-5153362a14c1.jpg" />  
 
@@ -67,6 +67,7 @@
    - While the sampling distribution of `mean` follows the `Normal`, the sampling distribution of `variance` follows the `Chi-Sqr`.  
    <img src="https://user-images.githubusercontent.com/31917400/47957744-c1e5c100-dfb3-11e8-8f46-dbef4064f2ab.jpg" /> 
    
+   - __From two samples:__
 
    
    
