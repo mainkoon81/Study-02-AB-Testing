@@ -59,10 +59,15 @@
      
  - > Population Variance Estimation
    - Let's say a company has set a timed sales goal where `population_SD` is less than 21 days(so variance upper limit is 441). Then they randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_variance = 582`, `sample_SD = 24 days` and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? considerable? so we fucked up to achieve the goal? Tell me. 
-   - First, note that we are using a **sample** with some error involved. We need to see if this sample_SD exceeds enough to be significant.  
+   - First, note that we are using a **single sample** with some error involved. We need to see if this sample_SD exceeds enough to be significant.  
    <img src="https://user-images.githubusercontent.com/31917400/47957077-9a88f700-dfa7-11e8-885f-d6830550de2d.jpg" />  
 
-     
+   - While the sampling distribution of `mean` follows the `Normal`, the sampling distribution of `variance` follows the `Chi-Sqr`.  
+   <img src="https://user-images.githubusercontent.com/31917400/47957231-02404180-dfaa-11e8-9e19-3da7fcb6d949.jpg" /> 
+   
+   
+   
+   
 #### Statistical Power
  - Power = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
    - reject H0: 'pos'
