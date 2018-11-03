@@ -13,7 +13,7 @@
 
 **Hypothesis tests**(Significance tests) take an `aggregate approach` towards the conclusions made based on data, as these tests are aimed at understanding population parameters(which are **aggregate population values** -_-;). `A/B testing` is another name for "the significance test for **two sample proportions**". For example, it's used for comparing `ClickThroughRates`. 
  - The critical region `α` (such as 0.10, 0.05, 0.01) for the hypothesis test is the region of rejection in the distribution. 
-   - if one tailed (H0: `μ < sth`): `1 - cdf` < `α`
+   - if one tailed (H0: `μ <= sth`): `1 - cdf` < `α`
    - if two tailed (H0: `μ = sth`): `-α/2` < `1 - cdf` < `+α/2`(too big difference)
    - In `N(0,1)`, 1.64, 1.96, 2.58 are called `threshold Z_value` or `cut_off_value` pointing significance level of 90%, 95%, 99%, and the test statistics of H0 is just a `Z_value`. 
  - **p_value of H0, a probability value `1 - F(x) where x is my test statistics`, is hinting about some information on our population parameter.** Is it wider then critical region `α` or not?  
@@ -57,8 +57,11 @@
        - Alpha_new = Alpha / choose(N,2)
      - **One VS the rest:** 
      
- - > Variance Estimation
- 
+ - > Population Variance Estimation
+   - Let's say a company has set a timed sales goal where `population_SD` is less than 21 days(so variance upper limit is 441). Then they randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_variance = 582`, `sample_SD = 24 days` and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? considerable? so we fucked up to achieve the goal? Tell me. 
+   - First, note that we are using a **sample** with some error involved. We need to see if this sample_SD exceeds enough to be significant.  
+   <img src="https://user-images.githubusercontent.com/31917400/47957077-9a88f700-dfa7-11e8-885f-d6830550de2d.jpg" />  
+
      
 #### Statistical Power
  - Power = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
