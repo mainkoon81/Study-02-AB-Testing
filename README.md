@@ -39,7 +39,8 @@
 <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
 ### Chi-Sqr test: 
-#### 1> In a contingency table `(along cols: categories, along rows: each group)`, we want to know: 
+#### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
+we want to know: 
  - between two groups(rows), there is any significant **difference**?
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
  - between the groups(rows) and the categorical variables(columns), there is any **association**?
