@@ -97,8 +97,10 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables. 
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables. 
  - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric: Need of Dist_Assumption). 
+   - sample_mean VS population_mean
+   - sample_mean VS sample_mean
  - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
- - If these all things are in a contingency table(counting) => **Chi-Sqr test** (parametric ?) 
+ - If things are in a contingency table(counting) => **Chi-Sqr test** (parametric ?) 
  - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ?)
  - whether the variability of two samples differ each other => **F-test** (parametric) to compare the variances of two groups.
  - __SIMPLE RULE:__ 
