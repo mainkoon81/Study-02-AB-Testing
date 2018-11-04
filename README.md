@@ -72,16 +72,16 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 <img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />  
 
 #### Statistical Power
- - Power = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
+ - **Power** = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
    - reject H0: 'pos'
    - don't reject H0: 'neg'
    - FP: 'type I' error, FPr=P(FP)
    - FN: 'type II' error, FNr=P(FN)
-   - High power decreases the odds to get FN(type_II)
+ - **High power** decreases the odds to get FN(type_II)
  - Why quantify power ? 
    - 2 keys: Effect_Size, Sample_Size
-   - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect
-   - Sample_Size: Power helps determine the sample size we need(by P_Value)
+     - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect
+     - Sample_Size: Power helps determine the sample size we need(by P_Value)
 
 #### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables
