@@ -93,6 +93,8 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.`why not Chi-Sqr??`
  - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric) ?????
  - whether the variability of two samples differ each other => **F-test** (parametric) to compare the variances of two groups.
+ - __SIMPLE RULE:__ 
+   - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). Use a `t-test` if your predictor is **categorical** and your outcome is **continuous**(e.g., height, weight, etc). Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
 
 #### Popular Hypothesis testing (when the data are normally distributed)
  - 1.Testing a population mean (One sample t-test).
