@@ -62,7 +62,7 @@ we want to know:
      - **One VS the rest:** 
      
 #### 2> Population Variance Estimation
-   - __From a single sample:__
+ - __From a single sample:__
  <img src="https://user-images.githubusercontent.com/31917400/47957643-d759eb80-dfb1-11e8-84c6-5153362a14c1.jpg" />  
 
    - Let's say we have set a timed-sales-goal where `population_SD` is less than 21 days(so variance upper limit is `441`). Then we randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_variance = 582`, `sample_SD = 24 days` and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? so our goal `441` is too much(which means too small)? Tell me. 
@@ -73,7 +73,13 @@ we want to know:
    
 __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - Is the variance the same for both soup brands?
-<img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />
+
+#### 3> Goodness of fit
+ - When you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. Yeah, it claims about population proportion. It's a **Non-parametric** test. 
+   - `sample size` in each level of the category > `5` 
+   - `H0: The data are consistent with a specified distribution.`
+   <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
 
 #### Statistical Power
  - **Power** = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
@@ -87,20 +93,20 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
      - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect
      - Sample_Size: Power helps determine the sample size we need(by P_Value)
 
-#### Popular Questions
+### Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables. 
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables. 
  - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric: Need of Dist_Assumption). 
  - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
- - If these all things are in a contingency table(counting) => **Chi-Sqr test** (parametric) 
- - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric)
+ - If these all things are in a contingency table(counting) => **Chi-Sqr test** (parametric ?) 
+ - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ?)
  - whether the variability of two samples differ each other => **F-test** (parametric) to compare the variances of two groups.
  - __SIMPLE RULE:__ 
    - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
    - Use a `t-test` if your predictor is **categorical** and your outcome is **continuous**(e.g., height, weight, etc). 
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
 
-#### Popular Hypothesis testing (when the data are normally distributed)
+### Popular Hypothesis testing (when the data are normally distributed)
  - 1.Testing a **population mean** (One sample t-test).
  - 2.Testing the difference in means (Two sample t-test) with two **independent** samples.
  - 3.Testing the difference before and after some treatment on an the same individual (Paired t-test) with two **dependent** samples.
