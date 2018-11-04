@@ -2,7 +2,7 @@
 
 ## [Intro: SO...Not Enough Samples ?] 
 ### Let's do inferential stats! Estimate population parameter from samples.
-#### Estimation techniques for finding "good statistics" or 'population parameter'
+#### Estimation techniques for finding 'population parameter θ'
  - Maximum Likelihood Estimation
  - Method of Moments Estimation
  - Bayesian Estimation (easier to communicate with audience than awkawrd frequentists' methods)
