@@ -101,12 +101,12 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
 
 #### Popular Hypothesis testing (when the data are normally distributed)
- - 1.Testing a population mean (One sample t-test).
- - 2.Testing the difference in means (Two sample t-test) with two **independent** samples
- - 3.Testing the difference before and after some treatment on an the same individual (Paired t-test) with two **dependent** samples
- - 4.Testing a population proportion (One sample z-test)
- - 5.Testing the difference between population proportions (Two sample z-test)
- - 6.Comparing the means of more than two groups (ANOVA Test)
+ - 1.Testing a **population mean** (One sample t-test).
+ - 2.Testing the difference in means (Two sample t-test) with two **independent** samples.
+ - 3.Testing the difference before and after some treatment on an the same individual (Paired t-test) with two **dependent** samples.
+ - 4.Testing a **population proportion** (One sample z-test).
+ - 5.Testing the difference in proportions (Two sample z-test) with two **independent** samples.
+ - 6.Comparing the means of multiple groupsssss (ANOVA Test).
    - One-Way(factor) ANOVA Test (one response VS one predictor)
      - Using the F distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
 <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
