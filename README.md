@@ -39,10 +39,10 @@
 <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
 ### Chi-Sqr test: 
-#### 1> In a contingency table `(along cols: categories, along rows: each group)`, we want to know 
-   - between two groups(rows), there is any significant difference..in this case our **df** is `r-1`(NO.of variables to compare, one way)
-   - between the groups(rows) and the categorical variable(columns), there is any association..(H0: No connection or independent, H1: dependent)..in this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
-   
+#### 1> In a contingency table `(along cols: categories, along rows: each group)`, we want to know: 
+ - between two groups(rows), there is any significant difference..in this case our **df** is `r-1`(NO.of variables to compare, one way)
+ - between the groups(rows) and the categorical variable(columns), there is any association..(H0: No connection or independent, H1: dependent)..in this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
+ - > This is not about population mean or variance, but about the correlation?  
  - > if the accounts in the categories are binary(Bernulli) or multinary(A,B,C,D,F), and all values are playing with **frequency**...we first assume H0 is true, then ...
    - Values in Chi-sqr Dist are always (+).
    - Like t-Dist, it only has one parameter: df
