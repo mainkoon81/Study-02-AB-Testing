@@ -76,7 +76,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 <img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />
 
 #### 3> Goodness of fit
- - Use when you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution.`Is this sample come from this distribution?` Yeah, it claims about population proportion. It's a **Non-parametric** test. 
+ - Use when you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution.`Does this sample come from this distribution?` Yeah, it claims about population proportion. It's a **Non-parametric** test. 
    - `sample size` in each level of the category > `5` 
    - `H0: The data are consistent with a specified distribution.`
    <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
