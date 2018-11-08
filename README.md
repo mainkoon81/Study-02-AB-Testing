@@ -100,12 +100,13 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - sample_mean VS population_mean
    - sample_mean VS sample_mean
  - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
- - If things are in a contingency table(counting) => **Chi-Sqr test** (parametric ?) 
- - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ?)
+ - If things are in a contingency table(counting) => **Chi-Sqr test** (parametric ? No) 
+ - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ? No)
  - whether the variability of two samples differ each other => **F-test** (parametric) to compare the variances of two groups.
- - __SIMPLE RULE:__ 
+ - __Simple Rule of Significance Test:__ 
    - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
-   - Use a `t-test` if your predictor is **categorical** and your outcome is **continuous**(e.g., height, weight, etc). 
+   - Use a `t-test` if your single predictor has **two categorical**conditions and your outcome is **continuous**(e.g., height, weight, etc).
+     - it becomes two sample test...
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
 
 ### Popular Hypothesis testing (when the data are normally distributed)
@@ -115,7 +116,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - 4.Testing a **population proportion** (One sample z-test).
  - 5.Testing the difference in proportions (Two sample z-test) with two **independent** samples.
  - 6.Comparing the means of multiple groupsssss (ANOVA Test).
-   - One-Way(factor) ANOVA Test (one response VS one predictor)
+   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple `>3` conditions)
      - Using the F distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
 <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
