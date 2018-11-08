@@ -106,7 +106,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - __Simple Rule of Significance Test:__ 
    - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
    - Use a `t-test` if your single predictor has **two categorical** conditions and your outcome is **continuous**(e.g., height, weight, etc).
-     - it becomes a two sample test...
+     - it becomes a two sample test...(so use "One_way_ANOVA" for multi-sample`>3` test")
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
 
 ### Popular Hypothesis testing (when the data are normally distributed)
