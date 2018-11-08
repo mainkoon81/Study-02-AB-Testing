@@ -39,6 +39,8 @@
 <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
 ### Chi-Sqr test: 
+It's expected value = df
+ - the sum of squares of independent standard normals is a random variable that fairly naturally arises in a number of contexts*, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved and each of those squared components has mean `1` coz each means each one.
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
 we want to know: 
  - between two groups(rows), there is any significant **difference**?
