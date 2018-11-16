@@ -42,7 +42,11 @@
 __ > Note: How about `ClickThroughRates`??__
  - Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution because it's about the proportion!!!
- 
+
+### Proportion Sampling and z-test
+Let's say there are two samples - X and Y - and they are **independent Binomially? distributed** with parameters ~ `Bin(n, p)` and `Bin(m, p)`. You know what? `X+Y ~ Bin(n+m, p)`. By this logic, if `X1 ~ Bin(1,p)`, `X2 ~ Bin(1,p)`, ...., then `X1+X2+...Xn ~ Bin(n, p)`. (It's like a relationship between Bernoulli and Binomial. Like a Exponential and Gamma. Bur not like a Normal and Chi-Sqr? )  
+<img src="https://user-images.githubusercontent.com/31917400/48653099-cb7f1800-e9fa-11e8-8333-319b2726643d.jpg" />
+
 ### 2. Chi-Sqr test: 
 It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
@@ -124,9 +128,6 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
    - Use a `t-test` if your single predictor has **two categorical conditions**(means two samples) and your outcome is **continuous**(e.g., height, weight, etc).
      - it becomes a two sample test...(so use "One_way_ANOVA" for multi-sample`>=3` test")
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
-### Proportion Sampling 
-Let's say there are two samples - X and Y - and they are **independent Binomially? distributed** with parameters ~ `Bin(n, p)` and `Bin(m, p)`. You know what? `X+Y ~ Bin(n+m, p)`. By this logic, if `X1 ~ Bin(1,p)`, `X2 ~ Bin(1,p)`, ...., then `X1+X2+...Xn ~ Bin(n, p)`. (It's like a relationship between Bernoulli and Binomial. Like a Exponential and Gamma. Bur not like a Normal and Chi-Sqr? )  
-<img src="https://user-images.githubusercontent.com/31917400/48652717-cd47dc00-e9f8-11e8-8d5d-aa660ff8bf62.jpg" />
 
 ### Popular Hypothesis testing (when the data are normally distributed)
  - 1.Testing a **population mean** (One sample t-test).
