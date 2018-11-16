@@ -98,15 +98,6 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - Use when testing the hypothesis of the equality of `multiple means` at the same time (ANOVA). 
  - Use when testing the overall significance of the mutiple regression model as a whole(A significant `F-value` indicates a linear relationship between the `Response` and at least one of the `Predictors` so have some hope!). 
   
-
-
-
-
-
-
-
-
-
 ### 4. Statistical Power
  - **Power** = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
    - reject H0: 'pos'
