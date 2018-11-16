@@ -44,7 +44,7 @@ __ > Note: How about `ClickThroughRates`??__
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution because it's about the proportion!!!
  
 ### 2. Chi-Sqr test: 
-It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or summed) and each of those squared components has mean `1` coz each means each one.
+It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
 ### We use Chi-Sqr to test relationships between `categorical variables`.
 we want to know: 
