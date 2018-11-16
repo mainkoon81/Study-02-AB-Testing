@@ -28,8 +28,8 @@
 <img src="https://user-images.githubusercontent.com/31917400/47932798-8b804700-deca-11e8-82b6-b5261d7bde47.jpg" />  
 
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution. 
- - So in sampling distribution, always think about `sample size` and `variance`. If it's t-distribution,
-<img src="https://user-images.githubusercontent.com/31917400/48592789-f78a9280-e941-11e8-9d1d-3b9bdda3550e.jpg" />  
+ - So in sampling distribution, always think about `sample size` and `variance`. In case of t-distribution,
+<img src="https://user-images.githubusercontent.com/31917400/48619060-2d0b9c00-e993-11e8-87d1-08f2c327ac0c.jpg" />  
  
  - `ClickThroughRates`?? Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
 
