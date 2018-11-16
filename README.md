@@ -30,7 +30,7 @@
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
-### 1.Basic Sampling Test
+### 1. Basic Sampling Test
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
  - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
@@ -43,7 +43,7 @@ __ > Note: How about `ClickThroughRates`??__
  - Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution because it's about the proportion!!!
  
-### 2.Chi-Sqr test: 
+### 2. Chi-Sqr test: 
 It's expected value = df
  - the sum of squares of independent standard normals is a random variable that fairly naturally arises in a number of contexts*, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved and each of those squared components has mean `1` coz each means each one.
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
@@ -90,7 +90,16 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - `H0: The data are consistent with a specified distribution.`
    <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
 
-### 3.F Test
+### 3. F-Test
+F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two variances(of the two normally distributed samples). It has a density = ratio of gamma function(the sum of exponential) and two parameters = df `m` for the `numerator` and df `n` for the `denominator`. Let's say we have a 'iid' sample `X` and a 'iid' sample `Y` and both are **independent** (basic assumptions). 
+<img src="https://user-images.githubusercontent.com/31917400/48622948-33ecdb80-e9a0-11e8-972b-fd8acb742504.jpg" />
+
+
+
+ - Use when testing the hypothesis of the equality of two `sample variances` (Chi-Sqr test for a single population variance)
+ - Use when testing the hypothesis of the equality of `multiple means` at the same time (ANOVA). 
+ - Use when testing the overall significance of the mutiple regression model as a whole(A significant `F-value` indicates a linear relationship between the `Response` and at least one of the `Predictors` so have some hope!). 
+  
 
 
 
@@ -100,8 +109,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 
 
 
-
-### Statistical Power
+### 4. Statistical Power
  - **Power** = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
    - reject H0: 'pos'
    - don't reject H0: 'neg'
@@ -113,7 +121,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
      - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect
      - Sample_Size: Power helps determine the sample size we need(by P_Value)
 
-### Popular Questions
+### 5. Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables. 
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables. 
  - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric: Need of Dist_Assumption). 
@@ -171,6 +179,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
  - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
 <img src="https://user-images.githubusercontent.com/31917400/34945069-df8f793a-f9f9-11e7-8372-3f00bab83b24.jpg" />  
 
+----------------------------------------------------------------------------------------------------------
 ## However, using our computer,
 #### Instead of memorizing how to perform all of these tests, we can find the statistics that best estimates the parameter(s) we want to estimate, we can bootstrap to simulate the sampling distribution. Then we can use our sampling distribution to assist in choosing the appropriate hypothesis.
  
