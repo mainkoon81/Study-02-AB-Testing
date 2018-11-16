@@ -30,7 +30,7 @@
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
-#### Basic Sampling Test
+### 1.Basic Sampling Test
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
  - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
@@ -39,11 +39,11 @@
  - So in sampling distribution, always think about `sample size` and `variance`. In case of t-distribution,
 <img src="https://user-images.githubusercontent.com/31917400/48620729-018bb000-e999-11e8-8c69-6b1d57b4f486.jpg" />  
 
-__Note: How about `ClickThroughRates`??__
+__ > Note: How about `ClickThroughRates`??__
  - Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
  - We can compare two sample means and in this case, but cannot use t-test. We are able to use t-test when the test statistic we have follows the Student's t-distribution under the assumption that the null hypothesis is true. However, here the test statistic's null distribution is not t-distribution, but z-distribution because it's about the proportion!!!
  
-### Chi-Sqr test: 
+### 2.Chi-Sqr test: 
 It's expected value = df
  - the sum of squares of independent standard normals is a random variable that fairly naturally arises in a number of contexts*, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved and each of those squared components has mean `1` coz each means each one.
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
@@ -90,7 +90,18 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - `H0: The data are consistent with a specified distribution.`
    <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
 
-#### Statistical Power
+### 3.F Test
+
+
+
+
+
+
+
+
+
+
+### Statistical Power
  - **Power** = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
    - reject H0: 'pos'
    - don't reject H0: 'neg'
