@@ -175,7 +175,7 @@ aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
 ```
 The t-test formula depends on the **sample_mean** and the **sample_sd** of the data. It's basic form is `(The obv - the argu) / SE` where **'sample_sd'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **sample_sd** and the **sample size**, thus by definition, **SE** is always smaller than the **sample_sd**.
  - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
-<img src="https://user-images.githubusercontent.com/31917400/34945069-df8f793a-f9f9-11e7-8372-3f00bab83b24.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/48651980-29106600-e9f5-11e8-9324-ecf976284773.jpg" />  
 
 ----------------------------------------------------------------------------------------------------------
 ## However, using our computer,
