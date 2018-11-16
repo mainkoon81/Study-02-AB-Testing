@@ -27,10 +27,6 @@
 **CI** is used to bridge the gap between statistical sampling of an event and measuring every single instance of it. It tells you **how likely a small sample is to be correct when applied to the overall population.** They are derived using 'the bell curve concept' and aim to figure out **where most (90%) data would fall within 2 standard deviations from the mean.**
 <img src="https://user-images.githubusercontent.com/31917400/47932798-8b804700-deca-11e8-82b6-b5261d7bde47.jpg" />  
 
-
- 
-
- 
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
 
@@ -41,7 +37,7 @@
 <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
  - So in sampling distribution, always think about `sample size` and `variance`. In case of t-distribution,
-<img src="https://user-images.githubusercontent.com/31917400/48619060-2d0b9c00-e993-11e8-87d1-08f2c327ac0c.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/48620729-018bb000-e999-11e8-8c69-6b1d57b4f486.jpg" />  
 
 __Note: How about `ClickThroughRates`??__
  - Why comparing **two sample means** instead of going directly to comparing **two sample proportions** ? Because two sample proportions are also two sample means. WTF?! Let me explain: When the RV follows a Bernoulli-Dist(1 / 0), then the **sample mean**(the size of '1' out of n times) becomes the sample proportion, and we can get z-statistics.
