@@ -46,6 +46,7 @@
 It's expected value = df
  - the sum of squares of independent standard normals is a random variable that fairly naturally arises in a number of contexts*, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved and each of those squared components has mean `1` coz each means each one.
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
+### We use Chi-Sqr to test relationships between `categorical variables`.
 we want to know: 
  - between two groups(rows), there is any significant **difference**?
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
