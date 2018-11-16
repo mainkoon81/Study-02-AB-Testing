@@ -128,13 +128,6 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
 Let's say there are two samples - X and Y - and they are **independent Binomially? distributed** with parameters ~ `Bin(n, p)` and `Bin(m, p)`. You know what? `X+Y ~ Bin(n+m, p)`. By this logic, if `X1 ~ Bin(1,p)`, `X2 ~ Bin(1,p)`, ...., then `X1+X2+...Xn ~ Bin(n, p)`. (It's like a relationship between Bernoulli and Binomial. Like a Exponential and Gamma. Bur not like a Normal and Chi-Sqr? )  
 <img src="https://user-images.githubusercontent.com/31917400/48651166-84d8f000-e9f1-11e8-991e-ffb5c6090b4a.jpg" />
 
- - Test of two proportion samplings' outcomes. How differ? 
- 
-
-
-
-
-
 ### Popular Hypothesis testing (when the data are normally distributed)
  - 1.Testing a **population mean** (One sample t-test).
  - 2.Testing the difference in means (Two sample t-test) with two **independent** samples.
