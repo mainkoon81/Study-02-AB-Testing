@@ -116,14 +116,20 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
    - sample_mean VS population_mean
    - sample_mean VS sample_mean
  - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
- - If things are in a contingency table(counting) => **Chi-Sqr test** (parametric ? No) 
- - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ? No)
+ - If things are in a contingency table(counts from the categorical) => **Chi-Sqr test** (parametric ? `No`) 
+ - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ? `No`)
  - whether the variability of two samples differ each other => **F-test** (parametric) to compare the variances of two groups.
  - __Simple Rule of Significance Test:__ 
    - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
-   - Use a `t-test` if your single predictor has **two categorical** conditions and your outcome is **continuous**(e.g., height, weight, etc).
+   - Use a `t-test` if your single predictor has **two categorical conditions**(means two samples) and your outcome is **continuous**(e.g., height, weight, etc).
      - it becomes a two sample test...(so use "One_way_ANOVA" for multi-sample`>=3` test")
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
+### Sampling Distribution of proportion 
+Let's say there are two samples - X and Y - and they are **independent Binomially? distributed** with parameters ~ `Bin(n, p)` and `Bin(m, p)`. You know what? `X+Y ~ Bin(n+m, p)`. By this logic, if `X1 ~ Bin(1,p)`, `X2 ~ Bin(1,p)`, ...., then `X1+X2+...Xn ~ Bin(n, p)`. Here, we know that 
+
+
+
+
 
 ### Popular Hypothesis testing (when the data are normally distributed)
  - 1.Testing a **population mean** (One sample t-test).
@@ -132,12 +138,12 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - 4.Testing a **population proportion** (One sample z-test).
  - 5.Testing the difference in proportions (Two sample z-test) with two **independent** samples.
  - 6.Comparing the means of multiple groupsssss (ANOVA Test, the involvement of categorical variables).
-   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple `>=3` conditions)
-     - Using the F distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
+   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) conditions)
+     - Using the F-distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
 <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
-   - Two-Way(factor) ANOVA Test (one response VS two predictors)
-     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any interaction between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
+   - Two-Way(factor) ANOVA Test (one response VS two predictors with multiple(`>=3`) conditions)
+     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
 <img src="https://user-images.githubusercontent.com/31917400/40051922-5a9fc8ee-5834-11e8-95c4-3945026a87cc.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
