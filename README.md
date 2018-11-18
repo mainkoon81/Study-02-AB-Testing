@@ -49,8 +49,36 @@ Let's say there are two samples - X and Y - and they are **independent Binomiall
 
 ### 2. Chi-Sqr test: 
 It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` or **SS** of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
-#### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
+
+#### 1> Population Variance Estimation
+ - __From a single sample:__
+ <img src="https://user-images.githubusercontent.com/31917400/48678662-27be7500-eb7e-11e8-949e-396a7a87f092.jpg" />  
+
+   - Let's say we have set a timed-sales-goal where `population_SD` is less than 21 days(so variance upper limit is `441`). Then we randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_SD = 24 days`(so sample_var is `582`) and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? so our goal `441` is too much small? Tell me. 
+   <img src="https://user-images.githubusercontent.com/31917400/47957077-9a88f700-dfa7-11e8-885f-d6830550de2d.jpg" />  
+
+### Hey, While the sampling distribution of `sample_mean` follows the `Normal`, the sampling distribution of `sample_variance` follows the `Chi-Sqr`.  
+   <img src="https://user-images.githubusercontent.com/31917400/47957744-c1e5c100-dfb3-11e8-8f46-dbef4064f2ab.jpg" /> 
+   
+__[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
+ - Is the variance the same for both soup brands?
+<img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />
+
+### Next,
 ### We use Chi-Sqr to test relationships between `categorical variables`.
+
+#### 2> Goodness of fit
+<img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
+
+ - Use when you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution.`Does this sample come from this distribution?` Yeah, it claims about population proportion. It's a **Non-parametric** test. 
+   - `sample size` in each level of the category > `5`
+   - so..each category takes up some proportion area on the distribution(pdf) chart..and data point on x-axis belong to each category.. 
+   - `H0: The data are consistent with a specified distribution.`
+   <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
+
+#### 3> Contingency: `(along cols: categories, along rows: each group)`, values are all about `Countings`.
+<img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
+
 we want to know: 
  - between two groups(rows), there is any significant **difference**?
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
@@ -70,28 +98,7 @@ we want to know:
    - For Method: 
      - **pairwise:** compare every group against every other group.
        - Alpha_new = Alpha / choose(N,2)
-     - **One VS the rest:** 
-     
-#### 2> Population Variance Estimation
- - __From a single sample:__
- <img src="https://user-images.githubusercontent.com/31917400/48678662-27be7500-eb7e-11e8-949e-396a7a87f092.jpg" />  
-
-   - Let's say we have set a timed-sales-goal where `population_SD` is less than 21 days(so variance upper limit is `441`). Then we randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_SD = 24 days`(so sample_var is `582`) and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? so our goal `441` is too much small? Tell me. 
-   <img src="https://user-images.githubusercontent.com/31917400/47957077-9a88f700-dfa7-11e8-885f-d6830550de2d.jpg" />  
-
-## Hey, While the sampling distribution of `sample_mean` follows the `Normal`, the sampling distribution of `sample_variance` follows the `Chi-Sqr`.  
-   <img src="https://user-images.githubusercontent.com/31917400/47957744-c1e5c100-dfb3-11e8-8f46-dbef4064f2ab.jpg" /> 
-   
-__[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
- - Is the variance the same for both soup brands?
-<img src="https://user-images.githubusercontent.com/31917400/47958023-55ba8b80-dfba-11e8-91b2-3eb73030f733.jpg" />
-
-#### 3> Goodness of fit
- - Use when you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution.`Does this sample come from this distribution?` Yeah, it claims about population proportion. It's a **Non-parametric** test. 
-   - `sample size` in each level of the category > `5`
-   - so..each category takes up some proportion area on the distribution(pdf) chart..and data point on x-axis belong to each category.. 
-   - `H0: The data are consistent with a specified distribution.`
-   <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
+     - **One VS the rest:**    
 
 ### 3. F-Test
 F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two variances(of the two normally distributed samples). It has a density = ratio of gamma function(the sum of exponential) and two parameters = df `m` for the `numerator` and df `n` for the `denominator`. Let's say we have a 'iid' sample_A and a 'iid' sample_B and both are **independent** (basic assumptions). 
