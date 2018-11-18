@@ -48,7 +48,7 @@ Let's say there are two samples - X and Y - and they are **independent Binomiall
 <img src="https://user-images.githubusercontent.com/31917400/48653099-cb7f1800-e9fa-11e8-8333-319b2726643d.jpg" />
 
 ### 2. Chi-Sqr test: 
-It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
+It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` or **SS** of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
 #### 1> In a contingency table `(along cols: categories, along rows: each group)`, values are all about `Countings`.
 ### We use Chi-Sqr to test relationships between `categorical variables`.
 we want to know: 
