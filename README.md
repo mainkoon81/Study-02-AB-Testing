@@ -76,7 +76,7 @@ we want to know:
  - __From a single sample:__
  <img src="https://user-images.githubusercontent.com/31917400/48678662-27be7500-eb7e-11e8-949e-396a7a87f092.jpg" />  
 
-   - Let's say we have set a timed-sales-goal where `population_SD` is less than 21 days(so variance upper limit is `441`). Then we randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_variance = 582`, `sample_SD = 24 days` and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? so our goal `441` is too much(which means too small)? Tell me. 
+   - Let's say we have set a timed-sales-goal where `population_SD` is less than 21 days(so variance upper limit is `441`). Then we randomly select 15 sales records. Based on this sample, the following is obtained: `n = 15`, `sample_mean = 162 days`, `sample_SD = 24 days`(so sample_var is `582`) and our focus is variance. So our sample_SD is 24 days which exceeds the goal. But this exceed is significant? so our goal `441` is too much small)? Tell me. 
    <img src="https://user-images.githubusercontent.com/31917400/47957077-9a88f700-dfa7-11e8-885f-d6830550de2d.jpg" />  
 
    - While the sampling distribution of `mean` follows the `Normal`, the sampling distribution of `variance` follows the `Chi-Sqr`.  
