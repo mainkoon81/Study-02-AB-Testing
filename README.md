@@ -66,15 +66,22 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 
 ### Next,
 ### We use Chi-Sqr to test relationships between `categorical variables`.
-
+ - > This is not about population mean or variance, but about the correlation?  
+ - > if the accounts in the categories are binary(Bernulli) or multinary(A,B,C,D,F), and all values are playing with **frequency**...we first assume H0 is true, then ...
+   - Values in Chi-sqr Dist are always (+).
+   - **Like t-Dist, it only has one parameter: `df`**
+   - Location/Scale: 0 / 1 by default?
+   
 #### 2> Goodness of fit
 <img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
 
 > we want to know: 
  - between two groups(two classes), there is any significant **difference**?
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
-   
- - Use when you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution.`Does this sample come from this distribution?` Yeah, it claims about population proportion. It's a **Non-parametric** test. 
+ - `Does this sample come from this distribution?`
+ - Use when you have a single **categorical** sample (with multiple classes)from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. 
+   - Yeah, it claims about population proportion. 
+   - It's a **Non-parametric** test. 
    - `sample size` in each level of the category > `5`
    - so..each category takes up some proportion area on the distribution(pdf) chart..and data point on x-axis belong to each category.. 
    - `H0: The data are consistent with a specified distribution.`
@@ -87,11 +94,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - between the groups(rows) and the categorical variables(columns), there is any **association**?
    - `H0: No connection or independent` / `H1: dependent`
    - In this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
- - > This is not about population mean or variance, but about the correlation?  
- - > if the accounts in the categories are binary(Bernulli) or multinary(A,B,C,D,F), and all values are playing with **frequency**...we first assume H0 is true, then ...
-   - Values in Chi-sqr Dist are always (+).
-   - Like t-Dist, it only has one parameter: df
-   - Location/Scale: 0 / 1 by default
+ - test two random variables are statistically independent? 
 <img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
  - > What if we should compare more than 2 groups(2+ rows in a contingency table)?
