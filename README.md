@@ -70,6 +70,10 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 #### 2> Goodness of fit
 <img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
 
+> we want to know: 
+ - between two groups(two classes), there is any significant **difference**?
+   - In this case our **df** is `r-1`(NO.of variables to compare, one way)
+   
  - Use when you have a single **categorical** sample from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution.`Does this sample come from this distribution?` Yeah, it claims about population proportion. It's a **Non-parametric** test. 
    - `sample size` in each level of the category > `5`
    - so..each category takes up some proportion area on the distribution(pdf) chart..and data point on x-axis belong to each category.. 
@@ -79,9 +83,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 #### 3> Contingency: `(along cols: categories, along rows: each group)`, values are all about `Countings`.
 <img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
 
-we want to know: 
- - between two groups(rows), there is any significant **difference**?
-   - In this case our **df** is `r-1`(NO.of variables to compare, one way)
+> we want to know: 
  - between the groups(rows) and the categorical variables(columns), there is any **association**?
    - `H0: No connection or independent` / `H1: dependent`
    - In this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
@@ -143,11 +145,11 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - 4.Testing a **population proportion** (One sample z-test).
  - 5.Testing the difference in proportions (Two sample z-test) with two **independent** samples.
  - 6.Comparing the means of multiple groupsssss (ANOVA Test, the involvement of categorical variables).
-   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) conditions)
+   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
 <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
-   - Two-Way(factor) ANOVA Test (one response VS two predictors with multiple(`>=3`) conditions)
+   - Two-Way(factor) ANOVA Test (one response VS two predictors with multiple(`>=3`) classes)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
 <img src="https://user-images.githubusercontent.com/31917400/40051922-5a9fc8ee-5834-11e8-95c4-3945026a87cc.jpg" />  
      
