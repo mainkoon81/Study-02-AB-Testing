@@ -76,16 +76,15 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 <img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
 
 > we want to know: 
- - between two groups(two classes), there is any significant **difference**?
+ - between `one population group`(distribution) and `one sample groups with multiple classes`, is there any significant **difference**?
+   - `Does this sample come from this distribution?`
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
- - `Does this sample come from this distribution?`
- - Use when you have a single **categorical** sample (with multiple classes)from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. 
-   - Yeah, it claims about population proportion. 
-   - It's a **Non-parametric** test. 
-   - `sample size` in each level of the category > `5`
-   - so..each category takes up some proportion area on the distribution(pdf) chart..and data point on x-axis belong to each category.. 
-   - `H0: The data are consistent with a specified distribution.`
-   <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
+ - Use when you have a single **categorical** sample (with multiple classes) from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. `H0: The data are consistent with a specified distribution.`
+   - Yeah, it claims about population `proportion`. 
+   - It's a **Non-parametric** test. WHY? 
+   - `sample size` in each level of the category should be > `5`
+   - so..each category takes up some `proportion area` on the distribution(pdf) chart..and data point on x-axis belong to each category..like a set of divisions 
+   <img src="https://user-images.githubusercontent.com/31917400/48679735-d4532380-eb8b-11e8-8660-5bd890b30dac.jpg" />
 
 #### 3> Contingency-Test: `(along cols: categories, along rows: each group)`, values are all about `Countings`.
 <img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
