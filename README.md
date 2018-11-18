@@ -47,7 +47,7 @@ __ > Note: How about `ClickThroughRates`??__
 Let's say there are two samples - X and Y - and they are **independent Binomially? distributed** with parameters ~ `Bin(n, p)` and `Bin(m, p)`. You know what? `X+Y ~ Bin(n+m, p)`. By this logic, if `X1 ~ Bin(1,p)`, `X2 ~ Bin(1,p)`, ...., then `X1+X2+...Xn ~ Bin(n, p)`. (It's like a relationship between Bernoulli and Binomial. Like a Exponential and Gamma. Bur not like a Normal and Chi-Sqr? )  
 <img src="https://user-images.githubusercontent.com/31917400/48653099-cb7f1800-e9fa-11e8-8333-319b2726643d.jpg" />
 
-### 2. Chi-Sqr test: 
+### 2. Chi_Sqr-test: 
 It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` or **SS** of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
 
 #### 1> Population Variance Estimation
@@ -72,7 +72,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - **Like t-Dist, it only has one parameter: `df`**
    - Location/Scale: 0 / 1 by default?
    
-#### 2> Goodness of fit
+#### 2> Goodness_of_fit-Test:
 <img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
 
 > we want to know: 
@@ -87,7 +87,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - `H0: The data are consistent with a specified distribution.`
    <img src="https://user-images.githubusercontent.com/31917400/47964916-16cb1b00-e038-11e8-893f-805af7da9452.jpg" />
 
-#### 3> Contingency: `(along cols: categories, along rows: each group)`, values are all about `Countings`.
+#### 3> Contingency-Test: `(along cols: categories, along rows: each group)`, values are all about `Countings`.
 <img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
 
 > we want to know: 
