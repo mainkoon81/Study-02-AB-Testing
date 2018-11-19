@@ -72,37 +72,36 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - **Like t-Dist, it only has one parameter: `df`**
    - Location/Scale: 0 / 1 by default?
    
-#### 2> Goodness_of_fit-Test:
+#### 2> Goodness_of_fit-Test: `one distribution VS one categorical sample` (values are all about `Countings` like a histogram).
 <img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
 
 > we want to know: 
- - between `one population group`(distribution) and `one sample groups with multiple classes`, is there any significant **difference**?
+ - between `one population group`(distribution) and `one sample groups with multiple classes`, there is any **association**?
    - `Does this sample come from this distribution?`
+   - `H0: The data are consistent with a specified distribution.`
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
- - Use when you have a single **categorical** sample (with multiple classes) from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. `H0: The data are consistent with a specified distribution.`
+ - Use when you have a single **categorical** sample (with multiple classes) from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. 
    - Yeah, it claims about population `proportion`. 
    - It's a **Non-parametric** test. WHY? 
    - `sample size` in each level of the category should be > `5`
    - so..each category takes up some `proportion area` on the distribution(pdf) chart..and data point on x-axis belong to each category..like a set of divisions 
    <img src="https://user-images.githubusercontent.com/31917400/48679735-d4532380-eb8b-11e8-8660-5bd890b30dac.jpg" />
 
-#### 3> Contingency-Test: `(along cols: categories, along rows: each group)`, values are all about `Countings`.
+#### 3> Contingency-Test: `two categorical samples` (values are all about `Countings` like a histogram).
 <img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
 
 > we want to know: 
- - between the groups(rows) and the categorical variables(columns), there is any **association**?
-   - `H0: No connection or independent` / `H1: dependent`
+ - between the groups(rows) and the categorical variables(columns), there is any **association**? Test two random variables if they are statistically independent? 
+   - `H0: No connection or independent` / `H1: dependent between these two variables.`
    - In this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
- - test two random variables are statistically independent? 
 <img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
- - > What if we should compare more than 2 groups(2+ rows in a contingency table)?
+- > What if we should compare more than 2 groups(3,4,5...dimensional)?
+  - Do pair-wise multiple test (compare every group against every other group).
    - For P_Value: even running the same experiment twice, the odds to get significant p_value would increase..(FP). This is why Frequentist's methods are awkawrd...Here, we need to fix it using..
      - Bonferroni's Correction: Alpha_new = Alpha / # of tests
-   - For Method: 
-     - **pairwise:** compare every group against every other group.
        - Alpha_new = Alpha / choose(N,2)
-     - **One VS the rest:**    
+     - **One VS the rest:** ?????   
 
 ### 3. F-Test
 F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two variances(of the two normally distributed samples). It has a density = ratio of gamma function(the sum of exponential) and two parameters = df `m` for the `numerator` and df `n` for the `denominator`. Let's say we have a 'iid' sample_A and a 'iid' sample_B and both are **independent** (basic assumptions). 
