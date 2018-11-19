@@ -149,11 +149,11 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - e)Testing the difference in proportions (Two sample z-test) with `2` **independent** samples.
  - f)Comparing `**multiple samples**` (ANOVA Test, the involvement of categorical variables).
    - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
-     - Using the F-distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
+     - Using the F-distribution, it examines the influence of a single 'categorical' input variable(X1) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
      <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
    - Two-Way(factor) ANOVA Test (one response VS two predictors with multiple(`>=3`) classes)
-     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
+     - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X1, X2) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
      <img src="https://user-images.githubusercontent.com/31917400/40051922-5a9fc8ee-5834-11e8-95c4-3945026a87cc.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
