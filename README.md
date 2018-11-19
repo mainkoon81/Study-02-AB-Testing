@@ -75,6 +75,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 #### 2> Goodness_of_fit-Test: `one distribution VS one categorical sample` (values are all about `Countings` like a histogram).
 <img src="https://user-images.githubusercontent.com/31917400/48679061-5ee35500-eb83-11e8-82fe-2216e0724115.jpg" />  
 
+>  No parameters(mean, sd, etc) are required to compute the Goodness-of-Fit test and no assumptions are made about the underlying distribution. However, one can also use Chi-square to test whether a sample variance is exactly equal to the population variance. This test is a parametric test. 
 > we want to know: 
  - between `one population group`(distribution) and `one sample groups with multiple classes`, there is any **association**?
    - `Does this sample come from this distribution?`
