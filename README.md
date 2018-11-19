@@ -148,6 +148,7 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - d)Testing a **population proportion** (One sample z-test) with `1` sample.
  - e)Testing the difference in proportions (Two sample z-test) with `2` **independent** samples.
  - f)Comparing `**multiple samples**` (ANOVA Test, the involvement of categorical variables).
+   - Wtf is Multiple sample test? It involves the `categorical sample(s)` and the `response veriable` accordingly. 
    - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'categorical' input variable(X1) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
      <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
