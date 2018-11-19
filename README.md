@@ -108,7 +108,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two variances(of the two normally distributed samples). It has a density = ratio of gamma function(the sum of exponential) and two parameters = df `m` for the `numerator` and df `n` for the `denominator`. Let's say we have a 'iid' sample_A and a 'iid' sample_B and both are **independent** (basic assumptions). 
 <img src="https://user-images.githubusercontent.com/31917400/48623932-0ead9c80-e9a3-11e8-8377-5cae67faa5ae.jpg" />
 
- - Use when testing the hypothesis of the equality of two `sample variances` (Chi-Sqr test for a single population variance)
+ - Use when testing the hypothesis of the equality of two `sample variances` (Note: Chi-Sqr test for a single population variance)
  - Use when testing the hypothesis of the equality of `multiple means` at the same time (ANOVA). 
  - Use when testing the overall significance of the mutiple regression model as a whole(A significant `F-value` indicates a linear relationship between the `Response` and at least one of the `Predictors` so have some hope!). 
   
