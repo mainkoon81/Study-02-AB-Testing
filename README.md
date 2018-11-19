@@ -195,12 +195,9 @@ __*When estimating population parameters, we build the confidence intervals.__
    - Increasing your sample size will decrease the width of your confidence interval (by the law of large numbers).
    - Increasing your confidence level (say 95% to 99%) will increase the width of your confidence interval. 
  - C.I. that Capturing pop-mean/proportion
-<img src="https://user-images.githubusercontent.com/31917400/34266269-6c003960-e670-11e7-857f-3a755839c4b9.jpg" width="200" height="150" />  
+ <img src="https://user-images.githubusercontent.com/31917400/34266269-6c003960-e670-11e7-857f-3a755839c4b9.jpg" width="200" height="150" />  
 
- - C.I. that Capturing the difference in pop-mean/proportion
-<img src="https://user-images.githubusercontent.com/31917400/34266277-6e55239c-e670-11e7-924e-212e7c9f7876.jpg" width="290" height="150" /> 
-
- - C.I. with t-test as the Traditional mean comparison method with sampling - ex>"height"
+ - C.I. with t-test as the Traditional mean comparison method 
 ```
 df_samp = df.sample(200)
 X1 = df_samp[df_samp[condition] == True]['height'] 
