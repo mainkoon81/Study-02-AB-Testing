@@ -142,12 +142,12 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
    - Use a `t-test` if your single predictor has **only 2 categorical classes** and your outcome is **continuous**(e.g., height, weight, etc)...two_sample_t-test
    - use "One_way_ANOVA" for multi-sample`>2` test.
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
- - 1.Testing a **population mean** (One sample t-test).
- - 2.Testing the difference in means (Two sample t-test) with two **independent** samples.
- - 3.Testing the difference before and after some treatment on an the same individual (Paired t-test) with two **dependent** samples.
- - 4.Testing a **population proportion** (One sample z-test).
- - 5.Testing the difference in proportions (Two sample z-test) with two **independent** samples.
- - 6.Comparing **multiple samples** (ANOVA Test, the involvement of categorical variables).
+ - a)Testing a **population mean** (One sample t-test) with `1` sample.
+ - b)Testing the difference in means (Two sample t-test) with `2` **independent** samples.
+ - c)Testing the difference before and after some treatment on the same individual (Paired t-test) with `2` **dependent** samples.
+ - d)Testing a **population proportion** (One sample z-test) with `1` sample.
+ - e)Testing the difference in proportions (Two sample z-test) with `2` **independent** samples.
+ - f)Comparing `**multiple samples**` (ANOVA Test, the involvement of categorical variables).
    - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
      <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
