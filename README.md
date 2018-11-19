@@ -49,7 +49,7 @@ Let's say there are two samples - X and Y - and they are **independent Binomiall
 
 ### 2. Chi_Sqr-test: 
 It's expected value: `E[x] = df` (몇개나 더했어?) - the sum of squares`∑(x-μ)^2` or **SS** of independent standard normals is a random variable that fairly naturally arises in many contexts, and that is something we would like to have a name for. The degrees of freedom relates to the number of independent normals involved(or squared then summed) and each of those squared components has mean `1`. 
-> No parameters(mean, sd, etc) are required to compute the Goodness-of-Fit test and no assumptions are made about the underlying distribution. However, one can also use Chi-square to test whether a sample variance is exactly equal to the population variance. This test is a parametric test. 
+> In Goodness of Fit Test and Contingency Test, no parameters(mean, sd, etc) are required to compute and no assumptions are made about the underlying distribution. However, when we test if a sample variance is exactly equal to the population variance, this test is a parametric test because it makes assumptions about the underlying sample distribution (the data are normally distributed). 
 
 #### 1> Population Variance Estimation
  - __From a single sample:__
