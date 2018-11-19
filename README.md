@@ -127,27 +127,28 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
 ### 5. Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables. 
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables. 
- - whether two groups (n = 2) of samples differ from each other => **t-test** (parametric: Need of Dist_Assumption). 
-   - sample_mean VS population_mean
-   - sample_mean VS sample_mean
- - whether multiple groups (n >= 2) of samples differ from each other => **ANOVA test** as an extension of t-test to compare more than two groups.
- - If things are in a contingency table(counts from the categorical) => **Chi-Sqr test** (parametric ? `No`) 
- - whether the variability of a single sample differ from population variance => **Chi-Sqr test** (parametric ? `No`)
- - whether the variability of two samples differ each other => **F-test** (parametric) to compare the variances of two groups.
- - __Simple Rule of Significance Test:__ 
-   - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
-   - Use a `t-test` if your single predictor has **two categorical conditions**(means two samples) and your outcome is **continuous**(e.g., height, weight, etc).
-     - it becomes a two sample test...(so use "One_way_ANOVA" for multi-sample`>=3` test")
-   - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
+ - whether two groups (n = 2) of samples differ from each other => **t-test**(parametric: Need of Dist_Assumption). 
+   - sample_mean VS population_mean (one sample test)
+   - sample_mean VS sample_mean (two sample test)
+ - whether multiple groups (n > 2) of samples differ from each other => **ANOVA test**(Multiple Sample Test) as an extension of t-test
+ - If there is one categorical variable with multiple classes => **Chi-Sqr test**(parametric ? `No`)
+ - If things are in a contingency table(counts from the 2 categoricals) => **Chi-Sqr test**(parametric ? `No`) 
+ - whether the variability of a single sample differ from population variance => **Chi-Sqr test**(parametric ? `Yes`)
+ - whether the variability of two samples differ each other => **F-test**(parametric? `Yes`) 
 
 ### Popular Hypothesis testing (when the data are normally distributed)
+ - __Simple Rule of Significance Test:__ 
+   - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
+   - Use a `t-test` if your single predictor has **only 2 categorical classes** and your outcome is **continuous**(e.g., height, weight, etc)...two_sample_t-test
+   - use "One_way_ANOVA" for multi-sample`>2` test.
+   - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
  - 1.Testing a **population mean** (One sample t-test).
  - 2.Testing the difference in means (Two sample t-test) with two **independent** samples.
  - 3.Testing the difference before and after some treatment on an the same individual (Paired t-test) with two **dependent** samples.
  - 4.Testing a **population proportion** (One sample z-test).
  - 5.Testing the difference in proportions (Two sample z-test) with two **independent** samples.
  - 6.Comparing the means of multiple groupsssss (ANOVA Test, the involvement of categorical variables).
-   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
+   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>2`) classes)
      - Using the F-distribution, it examines the influence of a single 'numerical' or 'categorical' input variable(X) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
 <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
