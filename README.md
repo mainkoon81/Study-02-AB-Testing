@@ -132,24 +132,24 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - whether two groups (n = 2) of samples differ from each other => **t-test**(parametric: Need of Dist_Assumption). 
    - sample_mean VS population_mean (one sample test)
    - sample_mean VS sample_mean (two sample test)
- - whether multiple groups (n > 2) of samples differ from each other => **ANOVA test**(Multiple Sample Test) as an extension of t-test
- - If there is one categorical variable with multiple classes => **Chi-Sqr test**(parametric ? `No`)
- - If things are in a contingency table(counts from the 2 categoricals) => **Chi-Sqr test**(parametric ? `No`) 
+ - whether multiple groups (n >= 3) of samples differ from each other => **ANOVA test**(Multiple Sample Test) as an extension of t-test
+ - If there is one categorical variable with multiple classes and whether it is consistent with the population distribution => **Chi-Sqr test**(parametric ? `No`)
+ - If things are in a contingency table(counts from the 2 categoricals) and whether they are correlated => **Chi-Sqr test**(parametric ? `No`) 
  - whether the variability of a single sample differ from population variance => **Chi-Sqr test**(parametric ? `Yes`)
  - whether the variability of two samples differ each other => **F-test**(parametric? `Yes`) 
 
 ### Popular Hypothesis testing (when the data are normally distributed)
  - __Simple Rule of Significance Test:__ 
    - Use `Chi-Sqr_test` if your predictor and your outcome are both **categorical**(e.g., purple vs. white). 
-   - Use a `t-test` if your single predictor has **only 2 categorical classes** and your outcome is **continuous**(e.g., height, weight, etc)...two_sample_t-test
-   - use "One_way_ANOVA" for multi-sample`>2` test.
+   - Use a `t-test` if your single categorical predictor has **only 2 classes** and your outcome is **continuous**(e.g., height, weight, etc)...two_sample_t-test
+   - use "One_way_ANOVA" for multi-sample`>=3` test.
    - Use `correlation test` or `regression` if both the predictor and the outcome are **continuous**.
  - a)Testing a **population mean** (One sample t-test) with `1` sample.
  - b)Testing the difference in means (Two sample t-test) with `2` **independent** samples.
  - c)Testing the difference before and after some treatment on the same individual (Paired t-test) with `2` **dependent** samples.
  - d)Testing a **population proportion** (One sample z-test) with `1` sample.
  - e)Testing the difference in proportions (Two sample z-test) with `2` **independent** samples.
- - f)Comparing `**multiple samples**` (ANOVA Test, the involvement of categorical variables).
+ - f)Comparing `**multiple samples**` (ANOVA Test, the involvement of categorical variables and **Response variable**).
    - Wtf is Multiple sample test? It involves the `categorical sample(s)` and the `response veriable` accordingly. 
    - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'categorical' input variable(X1) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
