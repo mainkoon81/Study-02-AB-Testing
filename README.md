@@ -150,12 +150,16 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - d)Testing a **population proportion** (One sample z-test) with `1` sample.
  - e)Testing the difference in proportions (Two sample z-test) with `2` **independent** samples.
  - f)Comparing `**multiple samples**` (ANOVA Test, the involvement of categorical variables and **Response variable**).
-   - Wtf is Multiple sample test? It involves the `categorical sample(s)` and the `response veriable` accordingly. 
-   - One-Way(factor) ANOVA Test (one response VS one predictor with multiple(`>=3`) classes)
+   - Wtf is Multiple sample test? It involves the `categorical sample(s)` and the `response veriable` accordingly.
+   - Doing ANOVA requires our data to meet the following assumptions:
+     - Independent observations(IID): This often holds if each case contains a distinct person and the participants didn't interact.
+     - Homogeneity: the population variances are all equal over sub-populations. Violation of this assumption is less serious insofar as sample sizes are equal.
+     - Normality: the test variable must be normally distributed in each sub-population. This assumption becomes less important insofar as the sample sizes are larger.
+   - __One-Way(factor) ANOVA Test__ (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'categorical' input variable(X1) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
      <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
-   - Two-Way(factor) ANOVA Test (one response VS two predictors with multiple(`>=3`) classes)
+   - __Two-Way(factor) ANOVA Test__ (one response VS two predictors with multiple(`>=3`) classes)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X1, X2) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
      - [Notice]: We have 2 categorical variables, but we should generate **2** integrated categorical variables. In order to do this, note that `one of two original categorical variables cannot hold more than binary classes` because it's a two-way ANOVA. This binary classes are sacrificed and become `[World-I]` & `[World-II]`.
      <img src="https://user-images.githubusercontent.com/31917400/48743285-5f9aea80-ec5a-11e8-8468-7fea2dc42a2b.jpg" />  
