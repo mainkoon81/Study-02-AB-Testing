@@ -79,7 +79,8 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 > we want to know: 
  - between `one population group`(distribution) and `one sample groups with multiple classes`, there is any **association**?
    - `Does this sample come from this distribution?`
-   - `H0: No **difference** b/w the data and a specified distribution.`..(consistent)
+   - `H0: No **difference** b/w the data and a specified distribution.`..(consistent) WHYYYYY?
+     - Doeas it mean...? H0: mean(data) = μ(distribution) ??? or variance(data) = σ^2(distribution) ???????
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
  - Use when you have a single **categorical** sample (with multiple classes) from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. 
    - Yeah, it claims about population `proportion`. 
@@ -93,7 +94,8 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 
 > we want to know: 
  - between the groups(rows) and the categorical variables(columns), there is any **association**? Test two random variables if they are statistically independent? 
-   - `H0: No **association** b/w the two`..(independent)
+   - `H0: No **association** b/w the two`..(independent) WHYYYYYY?
+     - Doeas it mean...? H0: mean(categorical_data_A) = mean(categorical_data_B) ??? or  ρ(data_A and B) = 0 ???????
    - In this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
 <img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
