@@ -164,7 +164,7 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
      - [Notice]: We have 2 categorical variables, but we should generate **2** integrated categorical variables. In order to do this, note that `one of two original categorical variables cannot hold more than binary classes` because it's a two-way ANOVA. This binary classes are sacrificed and become `[World-I]` & `[World-II]`.
      - What is the `interaction`? 
        - An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y`(score) affects `girls` differently than `boys`.
-     <img src="https://user-images.githubusercontent.com/31917400/48743285-5f9aea80-ec5a-11e8-8468-7fea2dc42a2b.jpg" />  
+     <img src="https://user-images.githubusercontent.com/31917400/48811341-35fac580-ed25-11e8-844f-47de2ed13413.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
      - It helps to answer:
