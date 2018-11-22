@@ -164,10 +164,11 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
    - __Two-Way(factor) ANOVA Test__ (one response VS two predictors with multiple(`>=3`) classes)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X1, X2) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
      - [Notice]: We have 2 categorical variables, but we should generate **2** integrated categorical variables. In order to do this, note that `one of two original categorical variables cannot hold more than binary classes` because it's a two-way ANOVA. This binary classes are sacrificed and become `[World-I]` & `[World-II]`.
-     - H0: `mean(class_A) = mean(class_B) = mean(class_C)` from `factor_01` (like the one-way ANOVA).
-     - H0: `mean(class_1) = mean(class_2)` from `factor_02` (like the one-way ANOVA).
-     - H0: There is no interaction between the two factors (like the Chi-Sqr test for independence with contingency tables).
-       - What is the `interaction`? An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y`(score) affects `girls` differently than `boys`...so relate to `Y`.
+     - 3 Null-hypothesis
+       - H0: `mean(class_1) = mean(class_2) = mean(class_3)` from `factor_01` (like the one-way ANOVA).
+       - H0: `mean(class_Y) = mean(class_N)` from `factor_02` (like the one-way ANOVA).
+       - H0: `mean(class_1)|Y = mean(class_1)|N`,  `mean(class_2)|Y = mean(class_2)|N`, `mean(class_3)|Y = mean(class_3)|N` (like the Chi-Sqr test for independence with contingency tables)...this is the interaction test. 
+         - What is the `interaction`? An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y`(score) affects `girls` differently than `boys`...so relate to `Y`.
      <img src="https://user-images.githubusercontent.com/31917400/48811341-35fac580-ed25-11e8-844f-47de2ed13413.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
