@@ -164,7 +164,7 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
    - __Two-Way(factor) ANOVA Test__ (one response VS two predictors with multiple(`>=3`) classes)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X1, X2) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
      - [Notice]: We have 2 categorical variables, but we should generate **2** integrated categorical variables. In order to do this, note that `one of two original categorical variables cannot hold more than binary classes` because it's a two-way ANOVA. This binary classes are sacrificed and become `[World-I]` & `[World-II]`.
-     - `within_SS`는 항상 비교대상...
+     - `within_MS`는 항상 비교대상...
      - 3 Null-hypothesis
        - H0: `mean(class_1) = mean(class_2) = mean(class_3)` from `factor_01` (like the **one-way ANOVA**).
        - H0: `mean(class_Y) = mean(class_N)` from `factor_02` (like the **one-way ANOVA**).
