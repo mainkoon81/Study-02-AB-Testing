@@ -95,8 +95,8 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 > we want to know: 
  - between the categorical variable(rows) and the categorical variable(columns), there is any **association**? Test two random variables if they are statistically independent? 
    - `H0: No **association** b/w the two categorocal variables`..(so independent) ?
-     - the means of **category_A** is equal between **category_B** : Independence between **category_A** and **category_B**
-     - H0: mean(class_1A)|Y = mean(class_1A)|N,  mean(class_2A)|Y = mean(class_2A)|N, mean(class_3A)|Y = mean(class_3A)|N
+     - the means of **category_A(1/2/3)** is equal between **category_B(Y/N)** : Independence between **category_A** and **category_B**
+     - H0: `mean(class_1)|Y = mean(class_1)|N`,  `mean(class_2)|Y = mean(class_2)|N`, `mean(class_3)|Y = mean(class_3)|N`
    - In this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
 <img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
