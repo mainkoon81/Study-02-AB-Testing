@@ -79,8 +79,8 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
 > we want to know: 
  - between `one population group`(distribution) and `one sample groups with multiple classes`, there is any **association**?
    - `Does this sample come from this distribution?`
-   - `H0: No **difference** b/w the data and a specified distribution.`..(consistent) WHYYYYY?
-     - Doeas it mean...? H0: mean(data) = μ(distribution) ??? or variance(data) = σ^2(distribution) ???????
+   - `H0: No **difference** b/w the data and a specified distribution.`..(consistent)?
+     - Doeas it mean...? H0: observed_values = expected values
    - In this case our **df** is `r-1`(NO.of variables to compare, one way)
  - Use when you have a single **categorical** sample (with multiple classes) from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. 
    - Yeah, it claims about population `proportion`. 
@@ -89,13 +89,14 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - so..each category takes up some `proportion area` on the distribution(pdf) chart..and data point on x-axis belong to each category..like a set of divisions 
    <img src="https://user-images.githubusercontent.com/31917400/48679735-d4532380-eb8b-11e8-8660-5bd890b30dac.jpg" />
 
-#### 3> Contingency-Test: `two categorical samples` (values are all about `Countings` like a histogram).
+#### 3> Independence-Test with Contingency: `two categorical samples` (values are all about `Countings` like a histogram).
 <img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
 
 > we want to know: 
- - between the groups(rows) and the categorical variables(columns), there is any **association**? Test two random variables if they are statistically independent? 
-   - `H0: No **association** b/w the two`..(independent) WHYYYYYY?
-     - Doeas it mean...? H0: mean(categorical_data_A) = mean(categorical_data_B) ??? or  ρ(data_A and B) = 0 ???????
+ - between the categorical variable(rows) and the categorical variable(columns), there is any **association**? Test two random variables if they are statistically independent? 
+   - `H0: No **association** b/w the two categorocal variables`..(so independent) ?
+     - the means of **category_A** is equal between **category_B** : Independence between **category_A** and **category_B**
+     - H0: mean(class_1A)|Y = mean(class_1A)|N,  mean(class_2A)|Y = mean(class_2A)|N, mean(class_3A)|Y = mean(class_3A)|N
    - In this case our **df** is `(r-1)(c-1)`(NO.of variables to compare, two way)  
 <img src="https://user-images.githubusercontent.com/31917400/38503101-0c07da10-3c09-11e8-92f4-114707454eaa.jpg" />  
 
@@ -157,13 +158,16 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
      - Normality: the test variable must be normally distributed in each sub-population. This assumption becomes less important insofar as the sample sizes are larger.
    - __One-Way(factor) ANOVA Test__ (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'categorical' input variable(X1) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
+     - H0: `mean(class_A) = mean(class_B) = mean(class_C) = ...`
      <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
      
    - __Two-Way(factor) ANOVA Test__ (one response VS two predictors with multiple(`>=3`) classes)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X1, X2) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
      - [Notice]: We have 2 categorical variables, but we should generate **2** integrated categorical variables. In order to do this, note that `one of two original categorical variables cannot hold more than binary classes` because it's a two-way ANOVA. This binary classes are sacrificed and become `[World-I]` & `[World-II]`.
-     - What is the `interaction`? 
-       - An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y`(score) affects `girls` differently than `boys`.
+     - H0: `mean(class_A) = mean(class_B) = mean(class_C)` from `factor_01` (like the one-way ANOVA).
+     - H0: `mean(class_1) = mean(class_2)` from `factor_02` (like the one-way ANOVA).
+     - H0: There is no interaction between the two factors (like the Chi-Sqr test for independence with contingency tables).
+       - What is the `interaction`? An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y`(score) affects `girls` differently than `boys`...so relate to `Y`.
      <img src="https://user-images.githubusercontent.com/31917400/48811341-35fac580-ed25-11e8-844f-47de2ed13413.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
