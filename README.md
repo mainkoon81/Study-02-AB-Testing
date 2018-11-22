@@ -185,6 +185,10 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
 
 
 
+
+
+
+
 This gives t-statistics and P-value (with equal/unequal variance)
 ```
 import scipy.stats as stats
