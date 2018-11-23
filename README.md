@@ -179,9 +179,9 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
        - What are the relationships among the independent variables?
 
 > Randomized Block Design
- - two way ANOVA can refer to two distinct but related models.(y and X1, y and x2)
- - What's the difference between a **randomized block design** and a **two factor design**? They both use two-way ANOVA, and your blocks can be your factor.
-   - In both cases, you have `2 categorical variables` and `1 numerical response variable` but in a **randomized block design** the second categorical variable is a nuisance variable(no interest), while in the **two factor factorial design** the second categorical variable is also of interest and you would like to understand the interaction. If you were to just use the randomised block design, the interaction term `αβ` would but lumped in with the error term `ϵ`. 
+ - two way ANOVA can refer to two distinct but related models. [y and X1(a/b), y and x2(1/2/3...)]
+ - What's the difference between a **randomized block design** and a **two factor design**(given that they both use **two-way ANOVA**, and your **blocks** can be your factor) ?
+   - In both cases, you have `2 categorical variables` and `1 numerical response variable` but in a **randomized block design** the second categorical variable is a **nuisance variable(no interest)**, while in the **two factor factorial design** the second categorical variable is also of interest and you would like to understand the `interaction`. If you were to just use the randomised block design, the interaction term `αβ` would be lumped in with the error term `ϵ`. 
 
 
 
