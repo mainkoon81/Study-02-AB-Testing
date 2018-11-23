@@ -203,7 +203,8 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
  - two way ANOVA can refer to two distinct but related models. [y and X1(a/b), y and x2(1/2/3...)]
  - What's the difference between a **randomized block design** and a **two factor design**(given that they both use **two-way ANOVA**, and your **blocks** can be your factor) ?
    - In both cases, you have `2 categorical variables` and `1 numerical response variable` but in a **randomized block design** the second categorical variable is a **nuisance variable(no interest)**, while in the **two factor factorial design** the second categorical variable is also of interest and you would like to understand the **interaction**(In the randomised block design, the interaction term `αγ = δ` would be lumped in with the error term `ϵ`).
-   <img src="https://user-images.githubusercontent.com/31917400/48942392-2cd14a80-ef17-11e8-80f7-44e525103b08.jpg" />  
+   - What does it mean by "**blocking**"?
+   <img src="https://user-images.githubusercontent.com/31917400/48944475-bdf7ef80-ef1e-11e8-85e6-442f6fa4ad2f.jpg" />  
    
  - 1. Randomized Block Design  
    - `within_block` important and `between_block` not important
