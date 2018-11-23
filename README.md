@@ -133,7 +133,28 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - whether two groups (n = 2) of samples differ from each other => **t-test**(parametric: Need of Dist_Assumption). 
    - sample_mean VS population_mean (one sample test)
    - sample_mean VS sample_mean (two sample test)
- - whether multiple groups (n >= 3) of samples differ from each other => **ANOVA test**(Multiple Sample Test) as an extension of t-test
+ - whether multiple groups (n >= 3) of samples differ from each other => **ANOVA test**(Multiple Sample Test) as an extension of t-test.
+This gives t-statistics and P-value (with equal/unequal variance)
+```
+import scipy.stats as stats
+
+stats.ttest_1samp(a - b, popmean=0)  ## one sample ##
+stats.ttest_ind(df['A'], df['B'], equal_var = True)  ## two samples independent ##
+stats.ttest_rel(df['A'], df['B'])  ## Paired dependent ##
+
+index_dict = df.groupby('categorical_A').groups  ## it's housing all index of 'numeric_B_values' under the name of 'categ_values'
+stats.f_oneway(df['numeric_B'][index_dict['categ_values']], df['numeric_B'][index_dict['categ_values']], ...) ## oneway ANOVA ##
+
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+formula = 'response ~ C(A) + C(B) + C(A):C(B)'
+model = ols(formula, df).fit()
+aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
+```
+The t-test formula depends on the **sample_mean** and the **sample_sd** of the data. It's basic form is `(The obv - the argu) / SE` where **'sample_sd'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **sample_sd** and the **sample size**, thus by definition, **SE** is always smaller than the **sample_sd**.
+ - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
+<img src="https://user-images.githubusercontent.com/31917400/48678000-1c1a8080-eb75-11e8-8646-6b5680107487.jpg" />  
+
  - If there is one categorical variable with multiple classes and whether it is consistent with the population distribution => **Chi-Sqr test**(parametric ? `No`)
  - If things are in a contingency table(counts from the 2 categoricals) and whether they are correlated => **Chi-Sqr test**(parametric ? `No`) 
  - whether the variability of a single sample differ from population variance => **Chi-Sqr test**(parametric ? `Yes`)
@@ -192,26 +213,7 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
 
 
 
-This gives t-statistics and P-value (with equal/unequal variance)
-```
-import scipy.stats as stats
 
-stats.ttest_1samp(a - b, popmean=0)  ## one sample ##
-stats.ttest_ind(df['A'], df['B'], equal_var = True)  ## two samples independent ##
-stats.ttest_rel(df['A'], df['B'])  ## Paired dependent ##
-
-index_dict = df.groupby('categorical_A').groups  ## it's housing all index of 'numeric_B_values' under the name of 'categ_values'
-stats.f_oneway(df['numeric_B'][index_dict['categ_values']], df['numeric_B'][index_dict['categ_values']], ...) ## oneway ANOVA ##
-
-from statsmodels.formula.api import ols
-from statsmodels.stats.anova import anova_lm
-formula = 'response ~ C(A) + C(B) + C(A):C(B)'
-model = ols(formula, df).fit()
-aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
-```
-The t-test formula depends on the **sample_mean** and the **sample_sd** of the data. It's basic form is `(The obv - the argu) / SE` where **'sample_sd'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **sample_sd** and the **sample size**, thus by definition, **SE** is always smaller than the **sample_sd**.
- - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
-<img src="https://user-images.githubusercontent.com/31917400/48678000-1c1a8080-eb75-11e8-8646-6b5680107487.jpg" />  
 
 ----------------------------------------------------------------------------------------------------------
 ## However, using our computer,
