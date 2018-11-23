@@ -199,12 +199,15 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
        - What are the relationships among the dependent variables?
        - What are the relationships among the independent variables?
 
-> Randomized Block Design VS Two factor Factorial Design
+> **Randomized Block** Design VS **Two factor Factorial** Design
  - two way ANOVA can refer to two distinct but related models. [y and X1(a/b), y and x2(1/2/3...)]
  - What's the difference between a **randomized block design** and a **two factor design**(given that they both use **two-way ANOVA**, and your **blocks** can be your factor) ?
    - In both cases, you have `2 categorical variables` and `1 numerical response variable` but in a **randomized block design** the second categorical variable is a **nuisance variable(no interest)**, while in the **two factor factorial design** the second categorical variable is also of interest and you would like to understand the **interaction**(In the randomised block design, the interaction term `αβ` would be lumped in with the error term `ϵ`).
+   <img src="https://user-images.githubusercontent.com/31917400/48942392-2cd14a80-ef17-11e8-80f7-44e525103b08.jpg" />  
    
-   
+ - 1. Randomized Block Design  
+   - `within_block` important and `between_block` not important
+     - Let's say we test on efficiency of cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`: wood, `block 2`: plastic, `block 3`: metal...then when sampling, we randomly select      
 
 
 
