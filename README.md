@@ -211,8 +211,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
    
  - 1. Randomized Block Design  
    - `within_block` important and `between_block` not important
-     - Let's say we test on efficiency of cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`: wood, `block 2`: plastic, `block 3`: metal...then when sampling, we randomly select      
-
+     - Let's say we test on efficiency of 4 cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`means "wood", `block 2`means "plastic", `block 3`means "metal"...but we consider them homogeneous and assign randomly each treatment(cutting tool) but once in each block.        
 <img src="https://user-images.githubusercontent.com/31917400/48954722-a92d5300-ef42-11e8-94a1-15a85fd8891e.jpg" />  
 
 
