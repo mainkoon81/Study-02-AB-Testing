@@ -177,6 +177,7 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
        - Do changes in the independent variable(s) have significant effects on the dependent variables?
        - What are the relationships among the dependent variables?
        - What are the relationships among the independent variables?
+
 > Randomized Block Design
  - two way ANOVA can refer to two distinct but related models.(y and X1, y and x2)
  - What's the difference between a **randomized block design** and a **two factor design**? They both use two-way ANOVA, and your blocks can be your factor.
