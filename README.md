@@ -190,7 +190,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
        - H0: `mean(class_1) = mean(class_2) = mean(class_3)` from `factor_01` (like the **one-way ANOVA**).
        - H0: `mean(class_Y) = mean(class_N)` from `factor_02` (like the **one-way ANOVA**).
        - H0: `mean(class_1)|Y = mean(class_1)|N`,  `mean(class_2)|Y = mean(class_2)|N`, `mean(class_3)|Y = mean(class_3)|N` (like the **Chi-Sqr test for independence** with contingency tables)...this is the interaction test. 
-         - What is the `interaction`? An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y`(score) affects `girls` differently than `boys`...so relate to `Y`.
+         - What is the `interaction`? An interaction effect(boysXgirls) means that the effect of one factor depends on the other factor, and asking that if `Y|Age`(score) affects `girls` differently than `boys`. If `Y|Age_1`&`Y|Age_2`&`Y|Age_3` run parallel to each other across `girls` and `boys`, then `Age` and `Sex` are independent so have no relationship.  
      <img src="https://user-images.githubusercontent.com/31917400/48811341-35fac580-ed25-11e8-844f-47de2ed13413.jpg" />  
      
    - MANOVA Test (Multivariate Analysis of Variance)
