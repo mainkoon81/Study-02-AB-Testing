@@ -211,14 +211,37 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
    
  - > Randomized Block Design  
    - `within_block` important and `between_block` not important
-   - So it's a sort of two-way ANOVA without interaction !!!
+   - So it's a sort of **two-way ANOVA without interaction** !!!
    - Let's say we test on efficiency of 4 cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`means "wood", `block 2`means "plastic", `block 3`means "metal"...but we consider them homogeneous and assign randomly each treatment(cutting tool) but once in each block.        
  <img src="https://user-images.githubusercontent.com/31917400/48959885-8a3db980-ef60-11e8-8544-523adf74fab3.jpg" />  
 
- - > How ANOVA and linear regression are the same model?
+ - > How ANOVA is just a special case of Regression?
  <img src="https://user-images.githubusercontent.com/31917400/48967993-be58bf00-efe0-11e8-865f-781d43b9c85c.jpg" />  
 
-
+   - In the ANOVA model, the **predictors** are often called `factors` or `grouping variables`, but just like in the regression case, we can call them the more generic “predictors.”
+   - The subscript `i` indicates that each case has an individual value of **Y**. **ε** has an `i` subscript because there is one value per case. 
+   - In the regression model, we use `X` to indicate the value of the predictor variables. This is flexible — if `X` is numerical, we plug in the **numerical** values. If `X` is categorical, we simply indicate which group someone was in with coded values of X1. The simplest would have a `1 for the treatment` group and a `0 for the control` group. `β` measures the treatment effect on `Y`.
+   - ANOVA assumes that all the predictors are categorical (aka factors or grouping variables), those **predictors have a limited number of values**. Because of the limited number of values, the ANOVA model uses subscripts to indicate if someone is in the treatment or control group. Subscript `j` would have values of `1 for the treatment` and `0 for the control`. `α` measures the effect on `Y` of the treatment effect. Even those these `X` values aren’t written directly into the ANOVA model, they exist.
+   -  In the regression model, the error term is called the **intercept** and denoted `β0` and in the ANOVA model, this is called the **grand mean** and denoted `μ`. 
+   - Let's say we use a model with a single categorical predicter - employment - with 3 classes: managerial, clerical, and custodial. 
+   - In the ANOVA, the categorical variable is `effect-coded`, which means that each classes’ mean is compared to the `grand mean`. In the regression, the categorical variable is `dummy-coded`, which means that each classes’ intercept is compared to the reference group’s `intercept`. 
+   - The dummy coding creates two 1/0 variables: 
+     - Clerical = 1 for the clerical class, 0 otherwise; 
+     - Custodial = 1 for the custodial class, 0 otherwise.  
+     - Observations in the Managerial class have a **0 value on both of these variables**, and this is known as the reference group.
+   - Since the intercept is defined as the mean value **when all other predictors = 0**, and there are no other predictors, the 3 intercepts are just means. In both analyses, Job Category has an F=69.192, with a p < .001. Highly significant.
+   - Let's say in the ANOVA, we find the means of the three groups are:
+     - Clerical: 85.039
+     - Custodial: 298.111
+     - Manager: **77.619**
+   - Let's say in the Regression, we find these coefficients:
+     - Intercept: **77.619**
+     - Clerical: 7.420
+     - Custodial: 220.492
+   - The `intercept` is simply the **mean of the reference group**, Managers. The coefficients for the other two groups are the **differences** in the mean between the reference group and the other groups. for example, that the regression coefficient for Clerical is the difference between the mean for Clerical, 85.039, and the Intercept, or mean for Manager (85.039 – 77.619 = 7.420). The same works for Custodial. 
+   - ANOVA reports **each mean** and a `p-value that says at least two are significantly different`.  
+   - Regression reports **only one mean**(as an intercept), and the **differences** between that one and all other means, but the `p-values evaluate those specific comparisons`. 
+   - It’s all the same model; the same information but presented in different ways. 
 
 
 
