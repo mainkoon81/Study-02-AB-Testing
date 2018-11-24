@@ -180,7 +180,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
    - __One-Way(factor) ANOVA Test__ (one response VS one predictor with multiple(`>=3`) classes)
      - Using the F-distribution, it examines the influence of a single 'categorical' input variable(X1) on the 'numerical' response variable(Y)...whether the mean of some numeric variable differs across the levels of one categorical variable. Do any of the group means differ from one another? 
      - H0: `mean(class_A) = mean(class_B) = mean(class_C) = ...`
-     <img src="https://user-images.githubusercontent.com/31917400/40049943-fd17b908-582d-11e8-8c2e-8bc23c80114a.JPG" />  
+     <img src="https://user-images.githubusercontent.com/31917400/48962784-342b3f00-ef7d-11e8-80e9-38071b0b474e.JPG" />  
      
    - __Two-Way(factor) ANOVA Test__ (one response VS two predictors with multiple(`>=3`) classes)
      - As an extension of the one-way ANOVA, it examines the influence of 2 different 'categorical' input variables(X1, X2) on the 'numerical' response variable(Y). The two-way ANOVA not only aims at assessing the main effect of each independent variable but also if there is any `interaction` between them. https://www.youtube.com/watch?v=ajLdnsLPErE&t=442s
@@ -209,9 +209,10 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
    - **two-way ANOVA** is a special case of **factorial_design** as it compares two categorical variables. 
    <img src="https://user-images.githubusercontent.com/31917400/48951833-e4765480-ef37-11e8-99e4-df1a6367e92e.jpg" />  
    
- - 1. Randomized Block Design  
+ - # Randomized Block Design  
    - `within_block` important and `between_block` not important
-     - Let's say we test on efficiency of 4 cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`means "wood", `block 2`means "plastic", `block 3`means "metal"...but we consider them homogeneous and assign randomly each treatment(cutting tool) but once in each block.        
+   - So it's a sort of two-way ANOVA without interaction !!!
+   - Let's say we test on efficiency of 4 cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`means "wood", `block 2`means "plastic", `block 3`means "metal"...but we consider them homogeneous and assign randomly each treatment(cutting tool) but once in each block.        
 <img src="https://user-images.githubusercontent.com/31917400/48959885-8a3db980-ef60-11e8-8544-523adf74fab3.jpg" />  
 
 
