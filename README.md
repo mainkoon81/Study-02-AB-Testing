@@ -115,17 +115,22 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - Use when testing the hypothesis of the equality of `multiple means` at the same time (ANOVA). 
  - Use when testing the overall significance of the mutiple regression model as a whole(A significant `F-value` indicates a linear relationship between the `Response` and at least one of the `Predictors` so have some hope!). 
   
-### 4. Statistical Power
- - **Power** = Sensitivity(TPr) = P(reject H0 | H1 is True) = 1 - FNr
-   - reject H0: 'pos'
-   - don't reject H0: 'neg'
-   - FP: 'type I' error, FPr=P(FP)
-   - FN: 'type II' error, FNr=P(FN)
+### 4. Statistical Power and Effective Sample_size
+<img src="https://user-images.githubusercontent.com/31917400/49330112-131cac80-f582-11e8-84b9-37642907c783.jpg" />
+
+It refers the porbability to `reject H0` when it is correct to do so...**Not making type-II error:** `1 - β`. 
+ - type-I error: `α=FP`
+ - type-II error: `β=FN`
+ - **Power** = TN = P(reject H0 | H0 is False) = `1 - FN`
+   - true H0: 'pos'
+   - false H0: 'neg'
  - **High power** decreases the odds to get FN(type_II)
  - Why quantify power ? 
    - 2 keys: Effect_Size, Sample_Size
-     - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect
-     - Sample_Size: Power helps determine the sample size we need(by P_Value)
+     - Effect_Size: 'the difference b/w two Grp'...becomes easy to detect.
+     - Sample_Size: Power helps determine the sample size we need(by P_Value).
+     
+   
 
 ### 5. Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables. 
