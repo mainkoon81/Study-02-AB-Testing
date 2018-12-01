@@ -116,7 +116,7 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
  - Use when testing the overall significance of the mutiple regression model as a whole(A significant `F-value` indicates a linear relationship between the `Response` and at least one of the `Predictors` so have some hope!). 
   
 ### 4. Statistical Power and Effective Sample_size
-<img src="https://user-images.githubusercontent.com/31917400/49330112-131cac80-f582-11e8-84b9-37642907c783.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/49330372-9986bd80-f585-11e8-8639-c0cabbf638ff.jpg" />
 
 It refers the porbability to `reject H0` when it is correct to do so...**Not making type-II error:** `1 - β`. 
  - type-I error: `α=FP`
