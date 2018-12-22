@@ -87,7 +87,7 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
  - Use when you have a single **categorical** sample (with multiple classes) from a population. It is used to determine whether sample data are consistent with a hypothesized distribution(**proportion distribution**), i.e to test the hypothesis H0 that a set of observations is consistent with a given **probability** distribution. 
    - Yeah, it claims about population `proportion`. 
    - It's a **Non-parametric** test. WHY? 
-   - `sample size` in each level of the category should be > `5`
+   - `sample size`(expected frequency) in each level of the category should be > `5`
    - so..each category takes up some `proportion area` on the distribution(pdf) chart..and data point on x-axis belong to each category..like a set of divisions 
    <img src="https://user-images.githubusercontent.com/31917400/48679735-d4532380-eb8b-11e8-8660-5bd890b30dac.jpg" />
 
