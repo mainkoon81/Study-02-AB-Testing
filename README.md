@@ -415,12 +415,10 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
    - t-test above says that there is 79.3% chances the two samples come from the same distribution.
    - KS-test above says that there are 1.6% chances the two samples come from the same distribution. 
 ### __(-)__
-> 0. It wastes information in using only differences of greatest magnitude; (in cumulative form).
+> 0. It wastes information in using only differences of greatest magnitude in cumulative form.
 > 1. **KS-test** generally deals well with continuous data. Discrete data also possible, but test criteria is not exact, so can be inefficient. Chi-Sqr applies both continuous, discrete, but its “arbitrary” grouping can be a problem which affects "sensitivity" of H0 rejection. 
 > 2. For two samples, it needs same sample sizes. 
 > 3. the distinction between location/shape differences not established.. 
-
-
 
 ### 1. one sample Non-Parametric: `Sign-test`
 
