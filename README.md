@@ -387,17 +387,27 @@ When sampling **without replacement**(like HyperGeometric instead of Binomial) f
 
 -----------------------------------------------------------------------------------------------------
 ## [Non-Parametric Statistics]
-Nominal is Categorical. **`Ordinal`** is categorical but deals with the ranking of items in order. In your research, have you ever encountered one or more the following scenarios?
+Nominal is Categorical. **`Ordinal`** is categorical but deals with the **ranking** of items in order. In your research, have you ever encountered one or more the following scenarios?
  - some non-linear data ?
  - some “chunked” data (1-4 cm, 2-5 cm, >5 cm…)
  - qualitative judgments measured on a ratings scale
  - **data that don’t follow a normal distribution**
  - **data that violate assumptions of ANOVA**
  
-Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test is frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made. The questions are same:
+Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test is frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made, so we use empirical distributions. The questions are same:
  - One sample. A sample comes from a population with a specific(underlying) distribution?
  - Two samples. Are they coming from the same population with a specific(underlying) distribution? or the two datasets differ significantly?
- 
+ - In a non-parametric test, the observed sample is converted into ranks and then ranks are treated as a test statistic.
+
+> Pros
+ - 1. Non-parametric tests deliver accurate results even when the sample size is small.
+ - 2. Non-parametric tests are more powerful than parametric tests when the assumptions of normality have been violated.
+ - 3. They are suitable for all data types, such as nominal, ordinal, interval or the data which has outliers.
+> Cons
+ - 1. If there exists any parametric test for a data then using non-parametric test could be a terrible blunder.
+ - 2. The critical value tables for non-parametric tests are not included in many computer software packages so these tests require more manual calculations.
+
+
 ### 0. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
 `KS statistic` quantifies a **distance** 
  - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
@@ -415,10 +425,11 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
    - t-test above says that there is 79.3% chances the two samples come from the same distribution.
    - KS-test above says that there are 1.6% chances the two samples come from the same distribution. 
 ### __(-)__
-> 0. It wastes information in using only differences of greatest magnitude in cumulative form.
-> 1. **KS-test** generally deals well with continuous data. Discrete data also possible, but test criteria is not exact, so can be inefficient. Chi-Sqr applies both continuous, discrete, but its “arbitrary” grouping can be a problem which affects "sensitivity" of H0 rejection. 
-> 2. For two samples, it needs same sample sizes. 
-> 3. the distinction between location/shape differences not established.. 
+> 1. It wastes information in using only differences of greatest magnitude in cumulative form.
+> 2. **KS-test** generally deals well with continuous data. Discrete data also possible, but test criteria is not exact, so can be inefficient. 
+  - Chi-Sqr applies both continuous, discrete, but its “arbitrary” grouping can be a problem which affects "sensitivity" of H0 rejection. 
+> 3. For two samples, it needs same sample sizes. 
+> 4. the distinction between location/shape differences not established.. 
 
 ### 1. one sample Non-Parametric: `Sign-test`
 
@@ -427,6 +438,12 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 
 
 ### 3. two sample(independent) Non-Parametric: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
+
+
+### 4. Three or more dependent Non-Parametric: `Friedman-test`
+
+
+### 5. Three or more independent Non-Parametric: `Kruskal-Wallis H-test`
 
 
 
