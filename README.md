@@ -385,4 +385,59 @@ When performing more than one hypothesis test, your type-I error compounds. In o
 ### Finite Population Correction
 When sampling **without replacement**(like HyperGeometric instead of Binomial) from more than `5%` of a finite population, you need to multiply the SE by this correction `sqrt((N-n) / (N-1))` because under these circumstances, the Central Limit Theorem doesn’t hold. **FPC** captures the difference between sampling **with** replacement and sampling **without** replacement. 
 
+-----------------------------------------------------------------------------------------------------
+## [Non-Parametric Statistics]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
