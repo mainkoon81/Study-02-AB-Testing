@@ -403,14 +403,14 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
  - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
  - b/w the **empirical cdf** of 2 samples. 
 
-and looks for consistency by comparing... 
+and looks for consistency by comparing... overall shape, not parameters. `KS statistic` called **'D'** is simply the **maximum absolute difference** b/w the two cdf.  
  
 ### __(+)__
 > 1. `KS-test` allows you to detect patterns(such as variance) that you can’t detect with t-test.
  - t-test calculates the P-value of `sample vs Normal population` or `sample vs sample`. But there is an issue with t-Test: samples must be shaped in a **normal distribution**. What if we work a lot with Poisson distributions??? Binomial distribution???, etc?  
  - If the mean and SD b/w two samples are highly similar, **t-test** would give a very high p-value. 
  - But **KS-test** can detect the **variance**. In the chart below, for example, the red distribution has a slightly binomial which KS detects.
- <img src="https://user-images.githubusercontent.com/31917400/50406225-489b6b00-07b9-11e9-870d-744a4b0f4cc0.png" />  
+ <img src="https://user-images.githubusercontent.com/31917400/50407190-2eb65400-07ca-11e9-8b21-5dda4ac43e8c.png" />  
 
    - t-test above says that there is 79.3% chances the two samples come from the same distribution.
    - KS-test above says that there are 1.6% chances the two samples come from the same distribution. 
