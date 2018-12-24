@@ -387,22 +387,39 @@ When sampling **without replacement**(like HyperGeometric instead of Binomial) f
 
 -----------------------------------------------------------------------------------------------------
 ## [Non-Parametric Statistics]
-Nominal is Categorical. Ordinal is categorical but deals with the ranking of items in order. In your research, have you ever encountered one or more the following scenarios?
+Nominal is Categorical. **`Ordinal`** is categorical but deals with the ranking of items in order. In your research, have you ever encountered one or more the following scenarios?
  - some non-linear data ?
  - some “chunked” data (1-4 cm, 2-5 cm, >5 cm…)
  - qualitative judgments measured on a ratings scale
  - **data that don’t follow a normal distribution**
  - **data that violate assumptions of ANOVA**
  
-Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test is frequently of **ordinal** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made. 
+Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test is frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made. 
 
-### 1. one sample Non-Parametric test: `Sign-test`
+### 0. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
+t-test calculates the P-value of `sample vs Normal population` or `sample vs sample`. But there is an issue with t-Test: samples must be shaped in a **normal distribution**. What if we work a lot with Poisson distributions??? Binomial distribution???, etc?
+ - One sample. A sample comes from a population with a specific(underlying) distribution?
+ - Two samples. Are they coming from the same population with a specific(underlying) distribution? so the two datasets differ significantly?
+
+`KS-test` is a bit more complex and allows you to detect patterns(variance) you can’t detect with t-test. `KS statistic` quantifies a **distance** 
+ - b/w the **empirical distribution function** of the 1 sample and the **cumulative distribution function** of the 1 reference distribution, or 
+ - b/w the **empirical distribution functions** of 2 samples. 
+<img src="https://user-images.githubusercontent.com/31917400/50406225-489b6b00-07b9-11e9-870d-744a4b0f4cc0.png" />  
+
+ - If the mean and SD b/w two samples are highly similar, t-test gives a very high p-value. 
+ - KS Test can detect the **variance**. In the chart above, for example, the red distribution has a slightly binomial which KS detects.
+   - t-test says that there is 79.3% chances the two samples come from the same distribution.
+   - KS-test says that there are 1.6% chances the two samples come from the same distribution. 
 
 
-### 2. paired sample(dependent) Non-Parametric test: `Wilcoxon Signed_Rank-test`
+
+### 1. one sample Non-Parametric: `Sign-test`
 
 
-### 3. two sample(independent) Non-Parametric test: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
+### 2. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
+
+
+### 3. two sample(independent) Non-Parametric: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
 
 
 
