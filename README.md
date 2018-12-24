@@ -387,10 +387,22 @@ When sampling **without replacement**(like HyperGeometric instead of Binomial) f
 
 -----------------------------------------------------------------------------------------------------
 ## [Non-Parametric Statistics]
+Nominal is Categorical. Ordinal is categorical but deals with the ranking of items in order. In your research, have you ever encountered one or more the following scenarios?
+ - some non-linear data ?
+ - some “chunked” data (1-4 cm, 2-5 cm, >5 cm…)
+ - qualitative judgments measured on a ratings scale
+ - **data that don’t follow a normal distribution**
+ - **data that violate assumptions of ANOVA**
+ 
+Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test is frequently of **ordinal** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made. 
+
+### 1. one sample Non-Parametric test: `Sign-test`
 
 
+### 2. paired sample(dependent) Non-Parametric test: `Wilcoxon Signed_Rank-test`
 
 
+### 3. two sample(independent) Non-Parametric test: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
 
 
 
