@@ -394,7 +394,7 @@ Nominal is Categorical. **`Ordinal`** is categorical but deals with the **rankin
  - **data that don’t follow a normal distribution**
  - **data that violate assumptions of ANOVA**
  
-Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test is frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made, so we use empirical distributions. The questions are same:
+Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test can be any types but be frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made, so we use empirical distributions. The questions are same:
  - One sample. A sample comes from a population with a specific(underlying) distribution?
  - Two samples. Are they coming from the same population with a specific(underlying) distribution? or the two datasets differ significantly?
  - In a non-parametric test, the observed sample is converted into ranks and then ranks are treated as a test statistic.
@@ -406,8 +406,9 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
 > Cons
  - 1. If there exists any parametric test for a data then using non-parametric test could be a terrible blunder.
  - 2. The critical value tables for non-parametric tests are not included in many computer software packages so these tests require more manual calculations.
+<img src="https://user-images.githubusercontent.com/31917400/50407742-33343a00-07d5-11e9-99b4-a834702eea34.png" />  
 
-
+----------------------------------------------------------------------------------------------
 ### A. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
 `KS statistic` quantifies a **distance** 
  - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
