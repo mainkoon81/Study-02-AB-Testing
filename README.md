@@ -399,17 +399,26 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
  - Two samples. Are they coming from the same population with a specific(underlying) distribution? or the two datasets differ significantly?
  
 ### 0. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
-t-test calculates the P-value of `sample vs Normal population` or `sample vs sample`. But there is an issue with t-Test: samples must be shaped in a **normal distribution**. What if we work a lot with Poisson distributions??? Binomial distribution???, etc? `KS-test` allows you to detect patterns(such as variance) that you can’t detect with t-test. 
-
 `KS statistic` quantifies a **distance** 
- - b/w the **empirical distribution function** of the 1 sample and the **cumulative distribution function** of the 1 reference distribution, or 
- - b/w the **empirical distribution functions** of 2 samples. 
-<img src="https://user-images.githubusercontent.com/31917400/50406225-489b6b00-07b9-11e9-870d-744a4b0f4cc0.png" />  
+ - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
+ - b/w the **empirical cdf** of 2 samples. 
 
+and looks for consistency by comparing... 
+ 
+### __(+)__
+> 1. `KS-test` allows you to detect patterns(such as variance) that you can’t detect with t-test.
+ - t-test calculates the P-value of `sample vs Normal population` or `sample vs sample`. But there is an issue with t-Test: samples must be shaped in a **normal distribution**. What if we work a lot with Poisson distributions??? Binomial distribution???, etc?  
  - If the mean and SD b/w two samples are highly similar, **t-test** would give a very high p-value. 
- - But **KS-test** can detect the **variance**. In the chart above, for example, the red distribution has a slightly binomial which KS detects.
+ - But **KS-test** can detect the **variance**. In the chart below, for example, the red distribution has a slightly binomial which KS detects.
+ <img src="https://user-images.githubusercontent.com/31917400/50406225-489b6b00-07b9-11e9-870d-744a4b0f4cc0.png" />  
+
    - t-test above says that there is 79.3% chances the two samples come from the same distribution.
    - KS-test above says that there are 1.6% chances the two samples come from the same distribution. 
+### __(-)__
+> 0. It wastes information in using only differences of greatest magnitude; (in cumulative form).
+> 1. **KS-test** generally deals well with continuous data. Discrete data also possible, but test criteria is not exact, so can be inefficient. Chi-Sqr applies both continuous, discrete, but its “arbitrary” grouping can be a problem which affects "sensitivity" of H0 rejection. 
+> 2. For two samples, it needs same sample sizes. 
+> 3. the distinction between location/shape differences not established.. 
 
 
 
