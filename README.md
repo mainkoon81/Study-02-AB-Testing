@@ -408,7 +408,7 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
  - 2. The critical value tables for non-parametric tests are not included in many computer software packages so these tests require more manual calculations.
 
 
-### 0. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
+### A. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
 `KS statistic` quantifies a **distance** 
  - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
  - b/w the **empirical cdf** of 2 samples. 
@@ -431,19 +431,19 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 > 3. For two samples, it needs same sample sizes. 
 > 4. the distinction between location/shape differences not established.. 
 
-### 1. one sample Non-Parametric: `Sign-test`
+### B. one sample Non-Parametric: `Sign-test`
 
 
-### 2. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
+### C. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
 
 
-### 3. two sample(independent) Non-Parametric: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
+### D. two sample(independent) Non-Parametric: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
 
 
-### 4. Three or more dependent Non-Parametric: `Friedman-test`
+### E. Three or more dependent Non-Parametric: `Friedman-test`
 
 
-### 5. Three or more independent Non-Parametric: `Kruskal-Wallis H-test`
+### F. Three or more independent Non-Parametric: `Kruskal-Wallis H-test`
 
 
 
