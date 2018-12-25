@@ -438,9 +438,12 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - The sign test is considered a weaker test because it tests the pair value below or above the **median** and **it does not measure the pair difference**. 
  - One-Sided test
    - Its **test statistics `S`** is the count of observed data points(SIGNS) that corresponds `H1:Alternative Hypothesis`. Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance.  
-   - The normal approximation to the binomial distribution can be used for large sample sizes: > 25. In this case, the **test statistics `Z`** is `(S-n/2) / sqrt(npg)`where p=0.5, q=0.5 
  - Two-Sided test
-   - Its **test statistics `S`** is `max{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`
+   - Its **test statistics `S`** is `max{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`   
+ - The normal approximation to the binomial distribution can be used for large sample sizes: > 25. 
+   - Do a continous correction. 
+   - In this case, the **test statistics `Z`** is `(S-n/2) / sqrt(npg)`where p=0.5, q=0.5
+   - As for the direction, follow the eye in H0. 
  - For example, suppose we want to test if the haemoglobin level of vegans is likely to be less than 13g/dL. From 10 subjects, count **how many above(+) 13**, and **how many below(-) 13**. 
 <img src="https://user-images.githubusercontent.com/31917400/50425772-c96b6d00-0874-11e9-88e8-c692a926d610.jpg" />  
 
