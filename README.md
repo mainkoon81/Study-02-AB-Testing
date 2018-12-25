@@ -453,12 +453,12 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
-### C. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
+### C. paired sample(dependent) Non-Parametric: `Wilcoxon-test`
 
 
 
 
-### D. two sample(independent) Non-Parametric: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
+### D. two sample(independent) Non-Parametric: `Mann-Whitney-Wilcoxon-test`
 
 
 
