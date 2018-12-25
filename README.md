@@ -394,7 +394,7 @@ Nominal is Categorical. **`Ordinal`** is categorical but deals with the **rankin
  - **data that don’t follow a normal distribution**
  - **data that violate assumptions of ANOVA**
  
-Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test can be any types but be frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made, so we use empirical distributions. The questions are same:
+Non-parametric(distribution free) test is a statistical procedure whereby the data does not match a normal distribution. The data used in non-parametric test can be any types but be frequently of **`Ordinal`** data type, thus implying it does not depend on arithmetic properties. Consequently, all tests involving the ranking of data are non-parametric and also no statement about the distribution of data is made. Instead, we use empirical distributions. The questions are same:
  - One sample. A sample comes from a population with a specific(underlying) distribution?
  - Two samples. Are they coming from the same population with a specific(underlying) distribution? or the two datasets differ significantly?
  - In a non-parametric test, the observed sample is converted into ranks and then ranks are treated as a test statistic.
