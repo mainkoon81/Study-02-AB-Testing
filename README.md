@@ -440,11 +440,10 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - For example, suppose we want to test if the haemoglobin level of vegans is likely to be less than 13g/dL. From 10 subjects, count **how many above(+) 13**, and **how many below(-) 13**. 
 <img src="https://user-images.githubusercontent.com/31917400/50422929-1d5f5d00-0847-11e9-8b46-a4a9b295b812.jpg" />  
 
- - H0: Median η = 13, H1: Median η < 13
- - obtained 3(+) / 7(-)
- - From Bin(10, 0.5)...
-   - P(3 < x < 7) = 
-   - P(x < 3, x > 7) = 
+ - H0: Median `η >= 13`, H1: Median `η < 13`
+ - In the sample, we have 3(+) data points that >= 13.  
+ - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
+   - P(x < 3) = 0.172 which is greater than the 0.05 significance level, so do not reject H0.   
 
 
 ### C. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
