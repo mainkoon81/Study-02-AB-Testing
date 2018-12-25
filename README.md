@@ -435,13 +435,21 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 ### B. one sample Non-Parametric: `Sign-test`
 
 
+
+
 ### C. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
+
+
 
 
 ### D. two sample(independent) Non-Parametric: `Mann-Whitney U-test` or `Wilcoxon Rank_sum-test`
 
 
+
+
 ### E. Three or more dependent Non-Parametric: `Friedman-test`
+
+
 
 
 ### F. Three or more independent Non-Parametric: `Kruskal-Wallis H-test`
