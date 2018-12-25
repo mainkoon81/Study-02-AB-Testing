@@ -434,16 +434,20 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 
 ### B. one sample Non-Parametric: `Sign-test`
 It is also called the **`Binominal Sign-test`** with `p=0.5`.  
- - This Non-parametric tests is based on ranks of the data samples, and test hypotheses relating to quantiles of the probability distribution representing the population from which the data are drawn. Specifically, tests concern the population median`η` where `P(obv <= η) = 0.5`
- - Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance.  The normal approximation to the binomial distribution can be used for large sample sizes: > 25.
- - The sign test is considered a weaker test, because it tests the pair value below or above the **median** and **it does not measure the pair difference**. 
+ - This Non-parametric test is based on ranks of the data samples, and test the hypotheses relating to quantiles of the probability distribution representing the population from which the data are drawn. Specifically, the test concern the population median`η` where `P(obv <= η) = 0.5`
+ - The sign test is considered a weaker test because it tests the pair value below or above the **median** and **it does not measure the pair difference**. 
+ - One-Sided test
+   - Its **test statistics `S`** is the count of observed data points(SIGNS) that corresponds `H1:Alternative Hypothesis`. Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance.  
+   - The normal approximation to the binomial distribution can be used for large sample sizes: > 25. In this case, the **test statistics `Z`** is `(S-n/2) / sqrt(npg)`where p=0.5, q=0.5 
+ - Two-Sided test
+   - Its **test statistics `S`** is `max{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`
  - For example, suppose we want to test if the haemoglobin level of vegans is likely to be less than 13g/dL. From 10 subjects, count **how many above(+) 13**, and **how many below(-) 13**. 
-<img src="https://user-images.githubusercontent.com/31917400/50422929-1d5f5d00-0847-11e9-8b46-a4a9b295b812.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/50425772-c96b6d00-0874-11e9-88e8-c692a926d610.jpg" />  
 
  - H0: Median `η >= 13`, H1: Median `η < 13`
- - In the sample, we have 3(+) data points that >= 13.  
+ - In the sample, we have 7 data points that < 13, so the **test statistics `S`** is 7.   
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
-   - P(x < 3) = 0.172 which is greater than the 0.05 significance level, so do not reject H0.   
+   - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
 
 ### C. paired sample(dependent) Non-Parametric: `Wilcoxon Signed_Rank-test`
