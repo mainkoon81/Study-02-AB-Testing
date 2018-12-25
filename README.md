@@ -434,8 +434,8 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 
 ### B. one sample Non-Parametric: `Sign-test`
 It is also called the **`Binominal Sign-test`** with `p=0.5`.  
- - to test whether or not two groups are equally sized. It is based on the direction of the plus and minus sign of the observation, but not on their numerical magnitude.
- - It is used when dependent samples are ordered in pairs, where the bivariate random variables are mutually independent. ??
+ - This Non-parametric tests is based on ranks of the data samples, and test hypotheses relating to quantiles of the probability distribution representing the population from which the data are drawn. Specifically, tests concern the population median`η` where `P(obv <= η) = 0.5`
+ - Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance.  The normal approximation to the binomial distribution can be used for large sample sizes: > 25.
  - The sign test is considered a weaker test, because it tests the pair value below or above the **median** and **it does not measure the pair difference**. 
  - For example, suppose we want to test if the haemoglobin level of vegans is likely to be less than 13g/dL. From 10 subjects, count **how many above(+) 13**, and **how many below(-) 13**. 
 <img src="https://user-images.githubusercontent.com/31917400/50422929-1d5f5d00-0847-11e9-8b46-a4a9b295b812.jpg" />  
