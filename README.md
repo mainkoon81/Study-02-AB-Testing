@@ -488,6 +488,9 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
  - **Steps**:
    - 1) Identify group with **smaller** summed_ranks.
    - 2) For each data point in the group of the smaller summed_rank, add up how many points in the other group are higher in rank.
+     - test statistics: `U1` OR `U2`
+     - U1: Sum of all rank(gr1) - 0.5*n1*(n1 + 1), U2: Sum of all rank(gr2) - 0.5*n2*(n2 + 1)
+     - The Real U: `min(U1, U2)`
    - 3) Compare U-statistics to the U-distribution.  
 <img src="https://user-images.githubusercontent.com/31917400/50449942-7bad3e00-0922-11e9-9400-1ef1822fcaa6.jpg" />  
 
