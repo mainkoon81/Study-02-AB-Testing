@@ -386,7 +386,7 @@ When performing more than one hypothesis test, your type-I error compounds. In o
 When sampling **without replacement**(like HyperGeometric instead of Binomial) from more than `5%` of a finite population, you need to multiply the SE by this correction `sqrt((N-n) / (N-1))` because under these circumstances, the Central Limit Theorem doesn’t hold. **FPC** captures the difference between sampling **with** replacement and sampling **without** replacement. 
 
 -----------------------------------------------------------------------------------------------------
-# Who give a shit to parameters ???
+# Who does give a shit to parameters ???
 ## [Non-Parametric Statistics]
 Nominal is Categorical. **`Ordinal`** is categorical but deals with the **ranking** of items in order. In your research, have you ever encountered one or more the following scenarios?
  - some non-linear data ?
