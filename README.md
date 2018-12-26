@@ -443,7 +443,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - Its **test statistics `S`** is `max{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`   
  - The normal approximation to the binomial distribution can be used for large sample sizes: > 25. 
    - Do a continous correction. 
-   - In this case, the **test statistics `Z`** is `(S-n/2) / sqrt(npg)`where p=0.5, q=0.5
+   - In this case, the **test statistics `Z`** is `(S-n/2) / sqrt(npq)`where p=0.5, q=0.5
    - As for the direction, follow the eye in H0. 
  - For example, suppose we want to test if the haemoglobin level of vegans is likely to be less than 13g/dL. From 10 subjects, count **how many above(+) 13**, and **how many below(-) 13**. 
 <img src="https://user-images.githubusercontent.com/31917400/50425772-c96b6d00-0874-11e9-88e8-c692a926d610.jpg" />  
@@ -459,7 +459,9 @@ What if all data points > 13 were only marginally above that level, whereas the 
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
    - Matched Sample: Medical trial matching patients on age, gender
    - Repeated Sample: pre/post test score from same individuals..heart rate before/after exercise
-   
+ - Steps:
+   - 1) Arrange all sample deviations from median in order of magnitude and replace by ranks (1 = smallest deviation, n largest)
+
 
 ### D. two sample(independent) Non-Parametric: `Mann-Whitney-Wilcoxon-test`
 
