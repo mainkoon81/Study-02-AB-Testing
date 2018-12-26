@@ -459,6 +459,9 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
+### dependent? levels absorbed into one column?
+### independent? levels become separate columns?
+
 ### C1. paired sample(dependent) Non-Parametric: `Wilcoxon_Signed_Rank W-test`
  - Examples:
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
@@ -503,10 +506,10 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
 Just like one way ANOVA with repeated measurement or Randomized Blocks(two way ANOVA w/o interaction)? It's an extension of Wilcoxon paired W-test. 
  - Examples:
    - ratings of same performer on separate multiple test attempts(test, retest, re-test..)
-   - same product  rated by several different judges
+   - same product rated by several different judges
  -**Steps**:
-   - 1) Give ranks to each data point across treatment (low->high)
-   - 2) sum ranks across block(judge)
+   - 1) Give ranks to each data point **across `treatment`** (low->high)
+   - 2) sum ranks **across `block`**(judge)
    - 3) Calculate Chi-Sqr statistics: 
 <img src="https://user-images.githubusercontent.com/31917400/50458644-7bca2f80-095c-11e9-8b42-cf725e61afa4.jpg" />  
 
