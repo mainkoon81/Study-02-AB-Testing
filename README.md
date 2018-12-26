@@ -503,22 +503,21 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
 Just like one way ANOVA with repeated measurement or Randomized Blocks(two way ANOVA w/o interaction)? It's an extension of Wilcoxon paired W-test. 
  - Examples:
    - ratings of same performer on separate multiple test attempts(test, retest, re-test..)
-   - same product rated by several different judges
+   - same product  rated by several different judges
  -**Steps**:
-   - 1) Give ranks to each data point by column (low->high)
-   - 2) sum ranks by judge(block)
-   - 3) 
-
-<img src="https://user-images.githubusercontent.com/31917400/50449942-7bad3e00-0922-11e9-9400-1ef1822fcaa6.jpg" />  
+   - 1) Give ranks to each data point across treatment (low->high)
+   - 2) sum ranks across block(judge)
+   - 3) Calculate Chi-Sqr statistics: 
+<img src="https://user-images.githubusercontent.com/31917400/50458644-7bca2f80-095c-11e9-8b42-cf725e61afa4.jpg" />  
 
  - H0: Median `η1 = η2 = η3 = η4 = η5`, H1: Median `η1 != η2 != η3 != η4 != η5`
-
-
-
+ - Compare it to the Chi-Sqr distribution.
+   - The test statistics is 19.76 which is bigger than the value at 0.05 significance level, so we conclude that "reject H0". 
 
 ### D2. Three or more(independent) Non-Parametric: `Kruskal_Wallis-test`
-Just like one way ANOVA... 
-
+Just like one way ANOVA...It's an extension of Mann_Whitney_Wilcoxon U-test.  
+ - Examples:
+   - 
 
 
 
