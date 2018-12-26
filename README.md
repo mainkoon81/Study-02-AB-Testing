@@ -459,13 +459,13 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
-### C1. paired sample(dependent) Non-Parametric: `Wilcoxon_Signed_Rank-test`
+### C1. paired sample(dependent) Non-Parametric: `Wilcoxon_Signed_Rank W-test`
  - Examples:
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
    - Matched Sample: Medical trial matching patients on age, gender
    - Repeated Sample: pre/post test score from same individuals..heart rate before/after exercise
  - **Steps**:
-   - 1) We have two columns(before/after). Find the difference.
+   - 1) We have two columns(before/after). Find the difference(After - Before).
    - 2) Based on the differences, assign the SIGN(`-1`:if negative, `1`:if positive, `0`:if no change).   
    - 3) Drop the rows with SIGN '0' coz it won't contribute to our analysis.
    - 4) Go back to the differences and Order the differences by absolute values.
@@ -476,12 +476,12 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - 7) Compare to W-distribution to calculate the P-value. 
 <img src="https://user-images.githubusercontent.com/31917400/50445779-e2bdf900-0908-11e9-9534-4c73accdbab0.jpg" />  
 
- - H0: Median difference `η = 0`, H1: Median difference `η > 0`
+ - H0: Median difference `Dη = 0`, H1: Median difference `Dη > 0`
  - In the sample, we have 12 data points.    
  - Compare it to the W distribution with the Lower tail. 
    - The test statistics is 10 which is smaller than the value at 0.05 significance level, so we conclude that "reject H0".     
 
-### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon_U-test`
+### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon U-test`
 It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. For example, let's say a pizza café owner wants to know who eats more slices of pizza: football or basketball players. With this information she will determine how much inventory she needs during football and basketball seasons. After collecting the data, you realize that there are some extreme outliers among basketball players that may **skew the results**. You determine to run a Mann_Whitney_Wilcoxon U-test. 
 <img src="https://user-images.githubusercontent.com/31917400/50447541-b9569a80-0913-11e9-8133-bb7f085c6862.jpg" />  
 
@@ -494,18 +494,30 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
    - 3) Compare U-statistics to the U-distribution.  
 <img src="https://user-images.githubusercontent.com/31917400/50449942-7bad3e00-0922-11e9-9400-1ef1822fcaa6.jpg" />  
 
- - H0: Median difference `η = 0`, H1: Median difference `η > 0`
+ - H0: Median `η1 = η2`, H1: Median `η1 > η2`
  - In the sample, we have 4 data points in group_A, and 3 in group_B.     
  - Compare it to the U-distribution. 
    - The test statistics is 1 which is bigger than the value at 0.05 significance level, so we conclude that "Do not reject H0". 
 
 ### D1. Three or more(dependent) Non-Parametric: `Friedman-test`
+Just like one way ANOVA with repeated measurement or Randomized Blocks(two way ANOVA w/o interaction)? It's an extension of Wilcoxon paired W-test. 
+ - Examples:
+   - ratings of same performer on separate multiple test attempts(test, retest, re-test..)
+   - same product rated by several different judges
+ -**Steps**:
+   - 1) Give ranks to each data point by column (low->high)
+   - 2) sum ranks by judge(block)
+   - 3) 
+
+<img src="https://user-images.githubusercontent.com/31917400/50449942-7bad3e00-0922-11e9-9400-1ef1822fcaa6.jpg" />  
+
+ - H0: Median `η1 = η2 = η3 = η4 = η5`, H1: Median `η1 != η2 != η3 != η4 != η5`
 
 
 
 
 ### D2. Three or more(independent) Non-Parametric: `Kruskal_Wallis-test`
-
+Just like one way ANOVA... 
 
 
 
