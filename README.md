@@ -454,9 +454,12 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
 ### C. paired sample(dependent) Non-Parametric: `Wilcoxon-test`
-
-
-
+What if all data points > 13 were only marginally above that level, whereas the data points < 13 were significantly below? We create ranks the absolute values of differences (b/w median`η` and each data point)!!   
+ - Examples:
+   - Related Sample: Marital Satisfaction ratings given by husbands and wives
+   - Matched Sample: Medical trial matching patients on age, gender
+   - Repeated Sample: pre/post test score from same individuals..heart rate before/after exercise
+   
 
 ### D. two sample(independent) Non-Parametric: `Mann-Whitney-Wilcoxon-test`
 
