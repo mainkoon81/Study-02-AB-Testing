@@ -455,23 +455,27 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
-### C1. paired sample(dependent) Non-Parametric: `Wilcoxon-test`
-What if all data points > 13 were only marginally above that level, whereas the data points < 13 were significantly below? We create ranks the absolute values of differences (b/w median`η` and each data point)!!   
+### C1. paired sample(dependent) Non-Parametric: `Wilcoxon_Signed_Rank-test`
  - Examples:
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
    - Matched Sample: Medical trial matching patients on age, gender
    - Repeated Sample: pre/post test score from same individuals..heart rate before/after exercise
  - Steps:
    - 1) We have two columns(before/after). Find the difference.
-   - 2) Based on the differences, assign the SIGN(`-1`:if negative, `1`:if positive, `0`:if no change).
-   - 3) Go back to the differences and Order the differences by absolute values.
-   - 4) Drop the rows with SIGN '0' coz it won't contribute to our analysis.
-   - 5) Assign ranks to the absolute differences. 
-   - 6) Multiply rank by the sign (Rank x sign) and add them all up = test statistics `W`
+   - 2) Based on the differences, assign the SIGN(`-1`:if negative, `1`:if positive, `0`:if no change).   
+   - 3) Drop the rows with SIGN '0' coz it won't contribute to our analysis.
+   - 4) Go back to the differences and Order the differences by absolute values.
+   - 5) Assign **Ranks** to the absolute differences. 
+   - 6) Multiply a rank by the sign (rank x sign = signed_rank) and add them all up = test statistics `W1` or `W2`
+     - W1: Sum of (+)ranks, W2: Sum of (-)ranks
+     - The Real W: `min(W1, W2)`
    - 7) Compare to W-distribution to calculate the P-value. 
-<img src="https://user-images.githubusercontent.com/31917400/50444625-72f84000-0901-11e9-9f7a-c4f4cf987150.jpg" />  
-   
+<img src="https://user-images.githubusercontent.com/31917400/50445779-e2bdf900-0908-11e9-9534-4c73accdbab0.jpg" />  
 
+ - H0: Median difference `η = 0`, H1: Median difference `η != 0`
+ - In the sample, we have 12 data points.    
+ - Compare it with the W distribution with the Lower tail. 
+   - The test statistics is 10 which is smaller than the 0.05 significance level, so we conclude that "reject H0".     
 
 ### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon-test`
 
