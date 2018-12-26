@@ -412,7 +412,7 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
 <img src="https://user-images.githubusercontent.com/31917400/50407742-33343a00-07d5-11e9-99b4-a834702eea34.png" />  
 
 ----------------------------------------------------------------------------------------------
-### A. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov-Smirnov-test`    
+### A. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov_Smirnov-test`    
 `KS statistic` quantifies a **distance** 
  - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
  - b/w the **empirical cdf** of 2 samples. 
@@ -465,7 +465,7 @@ What if all data points > 13 were only marginally above that level, whereas the 
    - 1) Arrange all sample deviations from median in order of magnitude and replace by ranks (1 = smallest deviation, n largest)
 
 
-### D. two sample(independent) Non-Parametric: `Mann-Whitney-Wilcoxon-test`
+### D. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon-test`
 
 
 
@@ -475,7 +475,7 @@ What if all data points > 13 were only marginally above that level, whereas the 
 
 
 
-### F. Three or more independent Non-Parametric: `Kruskal-Wallis H-test`
+### F. Three or more independent Non-Parametric: `Kruskal_Wallis-test`
 
 
 
