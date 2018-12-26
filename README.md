@@ -284,7 +284,9 @@ import statsmodels.stats.api as sm
 cm = sm.CompareMeans(sm.DescrStatsW(X1), sm.DescrStatsW(X2))
 cm.tconfint_diff(usevar='unequal')
 ```
-All of these formula have underlying "assumptions" (Central Limit Theorem - regarding the sampling distribution ie.the distribution of statistics) that may or maynot be true. But **Bootstrapping** does not need the assumptions of these intervals. Bootstrapping only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same Confidence Interval.    
+All of these formula have underlying "assumptions" (Central Limit Theorem - regarding the sampling distribution ie.the distribution of statistics) that may or maynot be true. But **Bootstrapping** does not need the assumptions of these intervals. Bootstrapping is one of the re-sampling techniques. 
+ - Re-sampling implies sampling from a sample in order to estimate empirical properties(such as variance, distribution, C.I. of an estimator) and to obtain Empirical DF of a test statistic. The common methods are Bootstrap, Jacknife, shuffling. They are effective when the distribution is unknown or complex. It's a Non-Parametric Method. 
+ - **Bootstrapping** only assumes the sample is representitive of the popluation. With large enough sample size, Bootstrapping and the traditional methods would provide the same **Confidence Interval**. 
 
 __*Bootstrapping and C.I.__
  - We just use a bootstrapping with 10,000 iterations to build a confidence interval !
