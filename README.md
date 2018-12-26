@@ -437,7 +437,7 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 
 ### B. one sample Non-Parametric: `Sign-test`
 It is also called the **`Binominal Sign-test`** with `p=0.5`.  
- - This Non-parametric test is based on ranks of the data samples, and test the hypotheses relating to quantiles of the probability distribution representing the population distribution from which the data are drawn. Specifically, the test concerns the population median`η` where `P(obv <= η) = 0.5` And ask the some prevalence of certain data point.
+ - This Non-parametric test is based on ranks of the data samples, and test the hypotheses relating to quantiles of the probability distribution representing the population distribution from which the data are drawn. Specifically, the test concerns the population median`η` where `P(obv <= η) = 0.5` And ask some prevalence of the certain data points.
  - The sign test is considered a weaker test because it tests the pair value below or above the **median** and **it does not measure the pair difference**. 
  - One-Sided test
    - Its **test statistics `S`** is the count of observed data points(SIGNS) that corresponds `H1:Alternative Hypothesis`. Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance. The p-value is defined by `P(x >= S)`  
@@ -462,7 +462,15 @@ What if all data points > 13 were only marginally above that level, whereas the 
    - Matched Sample: Medical trial matching patients on age, gender
    - Repeated Sample: pre/post test score from same individuals..heart rate before/after exercise
  - Steps:
-   - 1) Arrange all sample deviations from median in order of magnitude and replace by ranks (1 = smallest deviation, n largest)
+   - 1) We have two columns(before/after). Find the difference.
+   - 2) Based on the differences, assign the SIGN(`-1`:if negative, `1`:if positive, `0`:if no change).
+   - 3) Go back to the differences and Order the differences by absolute values.
+   - 4) Drop the rows with SIGN '0' coz it won't contribute to our analysis.
+   - 5) Assign ranks to the absolute differences. 
+   - 6) Multiply rank by the sign (Rank x sign) and add them all up = test statistics `W`
+   - 7) Compare to W-distribution to calculate the P-value. 
+<img src="https://user-images.githubusercontent.com/31917400/50444625-72f84000-0901-11e9-9f7a-c4f4cf987150.jpg" />  
+   
 
 
 ### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon-test`
