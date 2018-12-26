@@ -402,17 +402,17 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
  - Two samples. Are they coming from the same population with a specific(underlying) distribution? or the two datasets differ significantly?
  - In a non-parametric test, the observed sample is converted into ranks and then ranks are treated as a test statistic.
 
-> Pros
+> **Pros**
  - 1. Non-parametric tests deliver accurate results even when the sample size is small.
  - 2. Non-parametric tests are more powerful than parametric tests when the assumptions of normality have been violated.
  - 3. They are suitable for all data types, such as nominal, ordinal, interval or the data which has outliers.
-> Cons
+> **Cons**
  - 1. If there exists any parametric test for a data then using non-parametric test could be a terrible blunder.
  - 2. The critical value tables for non-parametric tests are not included in many computer software packages so these tests require more manual calculations.
 <img src="https://user-images.githubusercontent.com/31917400/50407742-33343a00-07d5-11e9-99b4-a834702eea34.png" />  
 
 ----------------------------------------------------------------------------------------------
-### A. one or two sample Non-Parametric(Goodness of Fit): `Kolmogorov_Smirnov-test`    
+### A. Non-Parametric Goodness of Fit: one or two sample: `Kolmogorov_Smirnov-test`    
 `KS statistic` quantifies a **distance** 
  - b/w the **empirical cdf** of the 1 sample and the **cdf** of the reference distribution, or 
  - b/w the **empirical cdf** of 2 samples. 
@@ -455,7 +455,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
-### C. paired sample(dependent) Non-Parametric: `Wilcoxon-test`
+### C1. paired sample(dependent) Non-Parametric: `Wilcoxon-test`
 What if all data points > 13 were only marginally above that level, whereas the data points < 13 were significantly below? We create ranks the absolute values of differences (b/w median`η` and each data point)!!   
  - Examples:
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
@@ -465,17 +465,17 @@ What if all data points > 13 were only marginally above that level, whereas the 
    - 1) Arrange all sample deviations from median in order of magnitude and replace by ranks (1 = smallest deviation, n largest)
 
 
-### D. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon-test`
+### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon-test`
 
 
 
 
-### E. Three or more dependent Non-Parametric: `Friedman-test`
+### D1. Three or more(dependent) Non-Parametric: `Friedman-test`
 
 
 
 
-### F. Three or more independent Non-Parametric: `Kruskal_Wallis-test`
+### D2. Three or more(independent) Non-Parametric: `Kruskal_Wallis-test`
 
 
 
