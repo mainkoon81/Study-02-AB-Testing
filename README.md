@@ -471,7 +471,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - 4) Go back to the differences and Order the differences by absolute values.
    - 5) Assign **Ranks** to the absolute differences. 
    - 6) Multiply a rank by the sign (rank x sign = signed_rank) and add them all up = test statistics `W1` or `W2`
-     - W1: Sum of (+)ranks, W2: Sum of (-)ranks
+     - W1: `Sum of (+)ranks`, W2: `Sum of (-)ranks`
      - The Real W: `min(W1, W2)`
    - 7) Compare to W-distribution to calculate the P-value. 
 <img src="https://user-images.githubusercontent.com/31917400/50445779-e2bdf900-0908-11e9-9534-4c73accdbab0.jpg" />  
@@ -489,7 +489,7 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
    - 1) Identify group with **smaller** summed_ranks.
    - 2) For each data point in the group of the smaller summed_rank, add up how many points in the other group are higher in rank.
      - test statistics: `U1` OR `U2`
-     - U1: Sum of all rank(gr1) - 0.5 x n1(n1 + 1), U2: Sum of all rank(gr2) - 0.5 x n2(n2 + 1)
+     - U1: `Sum of all rank(gr1) - 0.5 x n1(n1 + 1)`, U2: `Sum of all rank(gr2) - 0.5 x n2(n2 + 1)`
      - The Real U: `min(U1, U2)`
    - 3) Compare U-statistics to the U-distribution.  
 <img src="https://user-images.githubusercontent.com/31917400/50449942-7bad3e00-0922-11e9-9400-1ef1822fcaa6.jpg" />  
@@ -498,13 +498,6 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
  - In the sample, we have 4 data points in group_A, and 3 in group_B.     
  - Compare it to the U-distribution. 
    - The test statistics is 1 which is bigger than the value at 0.05 significance level, so we conclude that "Do not reject H0". 
-
-
-
-
-
-
-
 
 ### D1. Three or more(dependent) Non-Parametric: `Friedman-test`
 
