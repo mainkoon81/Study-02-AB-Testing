@@ -472,7 +472,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - 7) Compare to W-distribution to calculate the P-value. 
 <img src="https://user-images.githubusercontent.com/31917400/50445779-e2bdf900-0908-11e9-9534-4c73accdbab0.jpg" />  
 
- - H0: Median difference `η = 0`, H1: Median difference `η != 0`
+ - H0: Median difference `η = 0`, H1: Median difference `η > 0`
  - In the sample, we have 12 data points.    
  - Compare it with the W distribution with the Lower tail. 
    - The test statistics is 10 which is smaller than the 0.05 significance level, so we conclude that "reject H0".     
