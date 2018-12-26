@@ -420,7 +420,7 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
 and looks for consistency by comparing... overall shape, not parameters. `KS statistic` called **'D'** is simply the **maximum absolute difference** b/w the two cdf.  
  
 ### __(+)__
-> 1. `KS-test` allows you to detect patterns(such as variance) that you can’t detect with t-test.
+> 1. **KS-test** allows you to detect patterns(such as variance) that you can’t detect with t-test.
  - t-test calculates the P-value of `sample vs Normal population` or `sample vs sample`. But there is an issue with t-Test: samples must be shaped in a **normal distribution**. What if we work a lot with Poisson distributions??? Binomial distribution???, etc?  
  - If the mean and SD b/w two samples are highly similar, **t-test** would give a very high p-value. 
  - But **KS-test** can detect the **variance**. In the chart below, for example, the red distribution has a slightly binomial which KS detects.
@@ -460,7 +460,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
    - Matched Sample: Medical trial matching patients on age, gender
    - Repeated Sample: pre/post test score from same individuals..heart rate before/after exercise
- - Steps:
+ - **Steps**:
    - 1) We have two columns(before/after). Find the difference.
    - 2) Based on the differences, assign the SIGN(`-1`:if negative, `1`:if positive, `0`:if no change).   
    - 3) Drop the rows with SIGN '0' coz it won't contribute to our analysis.
@@ -474,11 +474,17 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
 
  - H0: Median difference `η = 0`, H1: Median difference `η > 0`
  - In the sample, we have 12 data points.    
- - Compare it with the W distribution with the Lower tail. 
+ - Compare it to the W distribution with the Lower tail. 
    - The test statistics is 10 which is smaller than the 0.05 significance level, so we conclude that "reject H0".     
 
-### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon-test`
+### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon_U-test`
+It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. 
+<img src="https://user-images.githubusercontent.com/31917400/50447541-b9569a80-0913-11e9-8133-bb7f085c6862.jpg" />  
 
+ - **Steps**:
+   - 1) Identify group with **smaller** summed_ranks.
+   - 2) For each data point in the group, add up how many in the other group are smaller in rank.
+   - 3) Compare U-statistics to the U-distribution.  
 
 
 
