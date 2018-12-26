@@ -435,6 +435,10 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 > 3. For two samples, it needs same sample sizes. 
 > 4. the distinction between location/shape differences not established.. 
 
+# Next, playing with medians. 
+ - Your dataset is skewed? 
+ - η is resistant to outliers !
+
 ### B. one sample Non-Parametric: `Sign-test`
 It is also called the **`Binominal Sign-test`** with `p=0.5`.  
  - This Non-parametric test is based on ranks of the data samples, and test the hypotheses relating to quantiles of the probability distribution representing the population distribution from which the data are drawn. Specifically, the test concerns the population median`η` where `P(obv <= η) = 0.5` And ask some prevalence of the certain data points.
@@ -475,16 +479,27 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - H0: Median difference `η = 0`, H1: Median difference `η > 0`
  - In the sample, we have 12 data points.    
  - Compare it to the W distribution with the Lower tail. 
-   - The test statistics is 10 which is smaller than the 0.05 significance level, so we conclude that "reject H0".     
+   - The test statistics is 10 which is smaller than the value at 0.05 significance level, so we conclude that "reject H0".     
 
 ### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon_U-test`
-It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. 
+It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. For example, let's say a pizza café owner wants to know who eats more slices of pizza: football or basketball players. With this information she will determine how much inventory she needs during football and basketball seasons. After collecting the data, you realize that there are some extreme outliers among basketball players that may **skew the results**. You determine to run a Mann_Whitney_Wilcoxon U-test. 
 <img src="https://user-images.githubusercontent.com/31917400/50447541-b9569a80-0913-11e9-8133-bb7f085c6862.jpg" />  
 
  - **Steps**:
    - 1) Identify group with **smaller** summed_ranks.
-   - 2) For each data point in the group, add up how many in the other group are smaller in rank.
+   - 2) For each data point in the group of the smaller summed_rank, add up how many points in the other group are higher in rank.
    - 3) Compare U-statistics to the U-distribution.  
+<img src="https://user-images.githubusercontent.com/31917400/50449942-7bad3e00-0922-11e9-9400-1ef1822fcaa6.jpg" />  
+
+ - H0: Median difference `η = 0`, H1: Median difference `η > 0`
+ - In the sample, we have 4 data points in group_A, and 3 in group_B.     
+ - Compare it to the U-distribution. 
+   - The test statistics is 1 which is bigger than the value at 0.05 significance level, so we conclude that "Do not reject H0". 
+
+
+
+
+
 
 
 
