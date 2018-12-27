@@ -459,8 +459,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it with the population distribution. From **`Bin(10, 0.5)`**...
    - P(x >= 7) = 0.172 which is greater than the 0.05 significance level, so we conclude that "do not reject H0".   
 
-### dependent? levels absorbed into one column?
-### independent? levels become separate columns?
+### Q. Dependent? levels absorbed into one column? Independent? levels become separate columns??????
 
 ### C1. paired sample(dependent) Non-Parametric: `Wilcoxon_Signed_Rank W-test`
  - Examples:
@@ -485,7 +484,9 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
    - The test statistics is 10 which is smaller than the value at 0.05 significance level, so we conclude that "reject H0".     
 
 ### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon U-test`
-It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. For example, let's say a pizza café owner wants to know who eats more slices of pizza: football or basketball players. With this information she will determine how much inventory she needs during football and basketball seasons. After collecting the data, you realize that there are some extreme outliers among basketball players that may **skew the results**. You determine to run a Mann_Whitney_Wilcoxon U-test. 
+It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. 
+ - Examples:
+   - Let's say a pizza café owner wants to know who eats more slices of pizza: football or basketball players. With this information she will determine how much inventory she needs during football and basketball seasons. After collecting the data, you realize that there are some extreme outliers among basketball players that may **skew the results**. You determine to run a Mann_Whitney_Wilcoxon U-test. 
 <img src="https://user-images.githubusercontent.com/31917400/50447541-b9569a80-0913-11e9-8133-bb7f085c6862.jpg" />  
 
  - **Steps**:
@@ -505,11 +506,11 @@ It compares two independent samples but compare them by `rank`! It uses **U**-st
 ### D1. Three or more(dependent) Non-Parametric: `Friedman-test`
 Just like one way ANOVA with repeated measurement or Randomized Blocks(two way ANOVA w/o interaction)? It's an extension of Wilcoxon paired W-test. 
  - Examples:
-   - ratings of same performer on separate multiple test attempts(test, retest, re-test..)
-   - same product rated by several different judges
+   - ratings of same performer(or a group of performers A,B,C..) on separate multiple test attempts(test, retest, re-test..)
+   - same product(or a group of products A,B,C..) rated by several different judges
  -**Steps**:
    - 1) Give ranks to each data point **across `treatment`** (low->high)
-   - 2) sum ranks **across `block`**(judge)
+   - 2) Sum up ranks **across `block`**(judge)
    - 3) Calculate Chi-Sqr statistics: 
 <img src="https://user-images.githubusercontent.com/31917400/50458644-7bca2f80-095c-11e9-8b42-cf725e61afa4.jpg" />  
 
@@ -518,53 +519,22 @@ Just like one way ANOVA with repeated measurement or Randomized Blocks(two way A
    - The test statistics is 19.76 which is bigger than the value at 0.05 significance level, so we conclude that "reject H0". 
 
 ### D2. Three or more(independent) Non-Parametric: `Kruskal_Wallis-test`
-Just like one way ANOVA...It's an extension of Mann_Whitney_Wilcoxon U-test.  
+Just like **one way ANOVA**. It's an extension of Mann_Whitney_Wilcoxon U-test. Use in case of the **unequal sample size**(one way ANOVA can do this too though).  
  - Examples:
-   - 
+   - Finding out how test anxiety affects exam scores. The predictor “test anxiety” has three levels: no anxiety, medium anxiety and high anxiety. The dependent variable is the exam score, rated from 0 to 100%.
+   - Finding out how socioeconomic status affects attitude towards sales_tax increases. The predictor is “socioeconomic status” with three levels: working class, middle class and wealthy. The dependent variable is measured on a 5-point Likert scale (ratings) from strongly agree to strongly disagree.
+   - To assess the **Effects of Expectation on the Perception of Aesthetic Quality**, an investigator randomly sorts 24 amateur wine aficionados into three groups, A, B, and C, of 8 subjects each(so exetremely independent each other). Each subject is scheduled for an individual interview. Unfortunately, one of the subjects of group B and two of group C fail to show up for their interviews, so the investigator must make do with samples of **unequal size: na=8, nb=7, nc=6, for a total of N=21**. The subjects who do show up for their interviews are each asked to rate the overall quality of each of three wines on a 10-point scale, with "1" standing at the bottom of the scale and "10" at the top. As it happens, the three wines are the same for all subjects. The only difference is in the texture of the interview, which is designed to induce a relatively **high expectation of quality in the members of group A; a relatively low expectation in the members of group C; and a merely neutral state, tending in neither the one direction nor the other, for the members of group B**. Remember our data points are ordinal... 
+ - **Steps**:
+   - 1) Give ranks to each data point **across `all data points`** (low->high)
+   - 2) `(S)` Sum up ranks **across `rows`**
+   - 3) `(n)` Find each Treatment size
+   - 4) `(N)` Total data size
+   - 5) Calculate Chi-Sqr statistics: 
+<img src="https://user-images.githubusercontent.com/31917400/50460634-b6899300-096f-11e9-8234-f3fbf16150df.jpg" />  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ - H0: Median `η1 = η2 = η3`, H1: Median `η1 != η2 != η3`
+ - Compare it to the Chi-Sqr distribution.
+   - The test statistics is 9.84 which is bigger than the value at 0.05 significance level, so we conclude that "reject H0". 
 
 
 
