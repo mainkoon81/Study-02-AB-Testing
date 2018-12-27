@@ -223,7 +223,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
    - `within_block` important and `between_block` not important
    - So it's a sort of **two-way ANOVA without interaction** !!!
    - Let's say we test on efficiency of 4 cutting tools. Data on measurements could be spread over several different materials such as wood, plastic, metal, etc. But we want to somehow eliminate the `effect of material` on cutting tools("material" is our nuisance variable). So we **block** measurements per material like..`block 1`means "wood", `block 2`means "plastic", `block 3`means "metal"...but we consider them homogeneous and assign randomly each treatment(cutting tool) but once in each block.        
- <img src="https://user-images.githubusercontent.com/31917400/48959885-8a3db980-ef60-11e8-8544-523adf74fab3.jpg" />  
+ <img src="https://user-images.githubusercontent.com/31917400/50484647-7cf56e00-09e9-11e9-941e-6cbb32daa15e.jpg" />  
 
  - > How ANOVA is just a special case of Regression?
  <img src="https://user-images.githubusercontent.com/31917400/48967993-be58bf00-efe0-11e8-865f-781d43b9c85c.jpg" />  
