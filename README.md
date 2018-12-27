@@ -526,7 +526,7 @@ Just like **one way ANOVA**. It's an extension of Mann_Whitney_Wilcoxon U-test. 
    - To assess the **Effects of Expectation on the Perception of Aesthetic Quality**, an investigator randomly sorts 24 amateur wine aficionados into three groups, A, B, and C, of 8 subjects each(so exetremely independent each other). Each subject is scheduled for an individual interview. Unfortunately, one of the subjects of group B and two of group C fail to show up for their interviews, so the investigator must make do with samples of **unequal size: na=8, nb=7, nc=6, for a total of N=21**. The subjects who do show up for their interviews are each asked to rate the overall quality of each of three wines on a 10-point scale, with "1" standing at the bottom of the scale and "10" at the top. As it happens, the three wines are the same for all subjects. The only difference is in the texture of the interview, which is designed to induce a relatively **high expectation of quality in the members of group A; a relatively low expectation in the members of group C; and a merely neutral state, tending in neither the one direction nor the other, for the members of group B**. Remember our data points are ordinal... 
  - **Steps**:
    - 1) Give ranks to each data point **across `all data points`** (low->high)
-   - 2) `(S)` Sum up ranks **across `rows`**
+   - 2) `(R)` Sum up ranks **across `rows`**
    - 3) `(n)` Find each Treatment size
    - 4) `(N)` Total data size
    - 5) Calculate Chi-Sqr statistics: 
