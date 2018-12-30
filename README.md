@@ -3,11 +3,15 @@
 ## [Intro: SO...Not Enough Samples ?] 
 ### Let's do inferential stats! Estimate population parameter from samples.
 #### Estimation techniques for finding 'population parameter θ'
- - Maximum Likelihood Estimation
- - Method of Moments Estimation
- - Bayesian Estimation (easier to communicate with audience than awkawrd frequentists' methods)
- - *Aggregate approach (CI, Hypothesis_test)
- - *Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
+ - 1.Maximum Likelihood Estimation
+   - Regular MLE(analytical)
+   - Grid Search
+   - Newton-Raphson Iteration 
+   - EM Algorithm
+ - 2.Method of Moments Estimation
+ - 3.Bayesian Estimation (easier to communicate with audience than awkawrd frequentists' methods)
+ - 4.Frequentist's *Aggregate approach (CI, Hypothesis_test)
+ - 5.*Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 
 > Hypothesis tests and CI: 
 <img src="https://user-images.githubusercontent.com/31917400/48592904-7aabe880-e942-11e8-9f7b-339edb6a60b2.jpg" />  
@@ -29,6 +33,7 @@
 
 > Machine learning techniques: 
  - It takes an `individual approach` towards making conclusions, as they attempt to predict an outcome for each specific data point.
+ - In LM, A coefficient describes the weight of the contribution of the corresponding independent variable. The parameter estimation refers to the process of using sample data to estimate the parameters of the selected distribution, in order to **minimize the cost function**. 
 
 ### 1. Basic Sampling Test
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
