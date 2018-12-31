@@ -217,7 +217,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
 
 ### **Randomized Block** Design VS **Two factor Factorial** Design
  - two way ANOVA can refer to two distinct but related models. [y and X1(a/b), y and x2(1/2/3...)]
- - What does it mean by "**blocking**"?
+ - What does it mean by "**blocking**"? Make experimental units homogeneous in a block. 
  <img src="https://user-images.githubusercontent.com/31917400/48944475-bdf7ef80-ef1e-11e8-85e6-442f6fa4ad2f.jpg" />  
  
  - What's the difference between a **randomized_block_design** and a **two-factorial_design**(given that they both use **two-way ANOVA**, and your **blocks** also can be your factor in two_factor_design) ?
