@@ -134,10 +134,11 @@ It refers the porbability to `reject H0` when it is correct to do so...**Not mak
  - **High power** decreases the odds to get FN(type_II) so **more Rejection**
  - Why quantify power ? 
    - Power helps determine the sample size we need(by P_Value).
- - Three elements that **'power'** depends on:
+ - Four elements to prepare better hypothesis testing!
    - 1. **Effect_size**(`Δ`): 'the difference b/w two Grp means'.
    - 2. width of the distribution..SE..(`σ/sqrt(n)`)
    - 3. significance level(`α`)
+   - 4. power you want(`1-β`)
  - so the effective sample_size`n` should be:
    - one tailed: `(σ/Δ)^2 * (Z<α> + Z<β>)^2`
    - two tailed: `(σ/Δ)^2 * (Z<α/2> + Z<β>)^2`
