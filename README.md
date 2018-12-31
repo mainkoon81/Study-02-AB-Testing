@@ -126,12 +126,12 @@ F-Distribution(Variance-Ratio-Distribution) defines the ratio of the two varianc
 <img src="https://user-images.githubusercontent.com/31917400/49330372-9986bd80-f585-11e8-8639-c0cabbf638ff.jpg" />
 
 It refers the porbability to `reject H0` when it is correct to do so...**Not making type-II error:** `1 - β`. 
- - type-I error: `α=FP`
+ - type-I error: `α=FP` 
  - type-II error: `β=FN`
- - **Power** = TN = P(reject H0 | H0 is False) = `1 - FN`
-   - true H0: 'pos'
-   - false H0: 'neg'
- - **High power** decreases the odds to get FN(type_II)
+ - **Power** = P(reject H0 | H0 is False) = `1 - FN` 
+   - REJECT: 'pos'
+   - ACCEPT: 'neg'
+ - **High power** decreases the odds to get FN(type_II) so **more Rejection**
  - Why quantify power ? 
    - Power helps determine the sample size we need(by P_Value).
  - Three elements that **'power'** depends on:
