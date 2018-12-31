@@ -208,7 +208,11 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
        - H0: `mean(class_1)|Y = mean(class_1)|N`,  `mean(class_2)|Y = mean(class_2)|N`, `mean(class_3)|Y = mean(class_3)|N` (like the **Chi-Sqr test for independence** with contingency tables)...this is the interaction test. 
          - What is the `interaction`? An interaction effect(boysXgirls) can be examined by asking if `Y|Age`(score) affects `girls` differently than `boys`. If `Y|Age_1`&`Y|Age_2`&`Y|Age_3` run parallel to each other across `girls` and `boys`, then we can say that `Age` categorical variable and `Gender` categorical variable are independent so have no relationship.  
      <img src="https://user-images.githubusercontent.com/31917400/48811341-35fac580-ed25-11e8-844f-47de2ed13413.jpg" />  
-     
+   
+   - 3 way ANOVA
+
+   
+   
    - MANOVA Test (Multivariate Analysis of Variance)
      - It helps to answer:
        - Do changes in the independent variable(s) have significant effects on the dependent variables?
