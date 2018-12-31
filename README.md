@@ -259,7 +259,20 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
    - Regression reports **only one mean**(as an intercept), and the **differences** between that one and all other means, but the `p-values evaluate those specific comparisons`. 
    - It’s all the same model; the same information but presented in different ways. 
 
+### Random VS Fixed Effects
+Let's say you have a model with a categorical predictor, which divides your observations into groups according to the category values. The model **coefficients**, or `"effects"`, associated to that predictor can be either **fixed** or **random**. Random effects are estimated with partial pooling, while fixed effects are not.
 
+ - Random Effect with partial pooling: Grp_effect estimate will be based **partially** on data from other groups.
+   - why partial pooling? 
+     - if estimating an effect by completely pooling all groups, it masks **Grp-level variation**. 
+     - The **sub-grps** are part of some **bigger grp** with a `common mean effect`. 
+     - The `sub-grp means` can deviate a bit from the `bigger grp mean`, but not by an arbitrary amount. 
+     - To formalize that idea, we posit that the deviations follow a **Normal distribution**. That's where the "random" in random effects comes in. 
+   - Its goal is to estimate `var(Treatments)`  
+ - Fixed Effect 
+   - Treatment effect sum to 0. 
+  - In practice, the distinction b/w **fixed** and **random** comes down to which variable has the levels of out interest: fixed, then other variables: random.
+<img src="https://user-images.githubusercontent.com/31917400/50566760-1055d880-0d35-11e9-8937-699546536b1f.jpg" />  
 
 
 
