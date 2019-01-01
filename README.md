@@ -213,7 +213,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
      - blah blah shit.
 
    
-   - 4. MANOVA Test (Multivariate Analysis of Variance)
+   - MANOVA Test (Multivariate Analysis of Variance)
      - ANOVA has only one dependent variable, while MANOVA has multiple dependent variables.
      - It helps to answer:
        - Do changes in the independent variable(s) have significant effects on the dependent variables?
@@ -228,7 +228,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
  - What's the difference between a **randomized_block_design** and a **two-factorial_design**(given that they both use **two-way ANOVA**, and your **blocks** also can be your factor in two_factor_design) ?
    - In both cases, you have `2 categorical variables` and `1 numerical response variable` but in a **randomized block design** the second categorical variable is a **nuisance variable**(no interest thus become a block variable), while in the **two factor factorial design** the second categorical variable is also of **interest** and you would like to understand the **interaction**(In the randomised block design, the interaction term `αγ = δ` would be lumped in with the error term `ϵ`).
    - **two-way ANOVA** is a special case of **factorial_design** as it compares two categorical variables. 
-   <img src="https://user-images.githubusercontent.com/31917400/48951833-e4765480-ef37-11e8-99e4-df1a6367e92e.jpg" />  
+   <img src="https://user-images.githubusercontent.com/31917400/50573353-41ccb380-0dca-11e9-9372-e3879ba008b4.jpg" />  
    
  - > Randomized Block Design  
    - `within_block` important and `between_block` not important
