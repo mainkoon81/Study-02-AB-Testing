@@ -210,10 +210,11 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
      <img src="https://user-images.githubusercontent.com/31917400/48811341-35fac580-ed25-11e8-844f-47de2ed13413.jpg" />  
    
    - 3 way ANOVA
+     - blah blah shit.
 
    
-   
-   - MANOVA Test (Multivariate Analysis of Variance)
+   - 4. MANOVA Test (Multivariate Analysis of Variance)
+     - ANOVA has only one dependent variable, while MANOVA has multiple dependent variables.
      - It helps to answer:
        - Do changes in the independent variable(s) have significant effects on the dependent variables?
        - What are the relationships among the dependent variables?
