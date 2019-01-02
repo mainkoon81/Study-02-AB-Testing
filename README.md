@@ -11,6 +11,8 @@
  - 2.Method of Moments Estimation
  - 3.Bayesian Estimation (easier to communicate with audience than awkawrd frequentists' methods)
  - 4.Frequentist's *Aggregate approach (CI, Hypothesis_test)
+   - parametric
+   - Non-parametric
  - 5.*Individual approach (machine learning, but does need more samples, doesn't care finding "good statistics")
 
 > Hypothesis tests and CI: 
