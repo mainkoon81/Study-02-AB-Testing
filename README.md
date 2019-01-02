@@ -467,12 +467,12 @@ and looks for consistency by comparing... overall shape, not parameters. `KS sta
 
 ### B. one sample Non-Parametric: `Sign-test`
 It is also called the **`Binominal Sign-test`** with `p=0.5`.  
- - This Non-parametric test is based on ranks of the data samples, and test the hypotheses relating to quantiles of the probability distribution representing the population distribution from which the data are drawn. Specifically, the test concerns the population median`η` where `P(obv <= η) = 0.5` And ask some prevalence of the certain data points.
+ - This Non-parametric test is based on ranks of the data samples, and test the hypotheses relating to quantiles of the probability distribution representing the population distribution from which the data are drawn. Specifically, the test concerns the population median`η` where `P(obv <= η) = 0.5` And ask some prevalence of the certain data points. It tests if the direction of change is random or not.
  - The sign test is considered a weaker test because it tests the pair value below or above the **median** and **it does not measure the pair difference**. 
  - One-Sided test
    - Its **test statistics `S`** is the count of observed data points(SIGNS) that corresponds `H1:Alternative Hypothesis`. Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance. The p-value is defined by `P(x >= S)`  
  - Two-Sided test
-   - Its **test statistics `S`** is `max{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`   
+   - Its **test statistics `S`** is `min{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`   
  - The normal approximation to the binomial distribution can be used for large sample sizes: > 25. 
    - Do a continous correction such as `S+0.5` 
    - In this case, the **test statistics `Z`** is `(S+0.5 - n/2) / sqrt(npq)`where p=0.5, q=0.5
