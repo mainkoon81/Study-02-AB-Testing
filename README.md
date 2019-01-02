@@ -487,7 +487,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
 
 ### Q. Dependent? levels absorbed into one column? Independent? levels become separate columns??????
 
-### C1. paired sample(dependent) Non-Parametric: `Wilcoxon_Signed_Rank W-test`
+### C1. paired sample(dependent) Non-Parametric: `Wilcoxon W-test (Sign*Rank)`
  - Examples:
    - Related Sample: Marital Satisfaction ratings given by husbands and wives
    - Matched Sample: Medical trial matching patients on age, gender
@@ -509,7 +509,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - Compare it to the W distribution with the Lower tail. 
    - The test statistics is 10 which is smaller than the value at 0.05 significance level, so we conclude that "reject H0".     
 
-### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon U-test`
+### C2. two sample(independent) Non-Parametric: `Mann_Whitney_Wilcoxon U-test (Rank)`
 It compares two independent samples but compare them by `rank`! It uses **U**-statistics: offering the degree of **overlap in ranks** b/w the two groups. 
  - Examples:
    - Let's say a pizza café owner wants to know who eats more slices of pizza: football or basketball players. With this information she will determine how much inventory she needs during football and basketball seasons. After collecting the data, you realize that there are some extreme outliers among basketball players that may **skew the results**. You determine to run a Mann_Whitney_Wilcoxon U-test. 
