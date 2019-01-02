@@ -433,7 +433,8 @@ Non-parametric(distribution free) test is a statistical procedure whereby the da
 > **Cons**
  - 1. If there exists any parametric test for a data then using non-parametric test could be a terrible blunder.
  - 2. The critical value tables for non-parametric tests are not included in many computer software packages so these tests require more manual calculations...And "Special table" for smaller sample sizes required.
- - 3. When variability differs b/w groups (unequal variance), it does not deliver accurate results. 
+ - 3. When variability differs b/w groups (unequal variance), it does not deliver accurate results.
+ - 4. In general, low power(hard to reject Null hypothesis). 
 <img src="https://user-images.githubusercontent.com/31917400/50407742-33343a00-07d5-11e9-99b4-a834702eea34.png" />  
 
 ----------------------------------------------------------------------------------------------
