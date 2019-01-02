@@ -472,7 +472,7 @@ It is also called the **`Binominal Sign-test`** with `p=0.5`.
  - One-Sided test
    - Its **test statistics `S`** is the count of observed data points(SIGNS) that corresponds `H1:Alternative Hypothesis`. Since the test statistic is expected to follow a binomial distribution, the standard binomial test is used to calculate significance. The p-value is defined by `P(x >= S)`  
  - Two-Sided test
-   - Its **test statistics `S`** is `min{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`   
+   - Its **test statistics `S`** is `max{S1, S2}`where S1 and S2 are the counts of the observations less than, and greater than the some specified value `η0`. The p-value is defined by `2*P(x >= S)`   
  - The normal approximation to the binomial distribution can be used for large sample sizes: > 25. 
    - Do a continous correction such as `S+0.5` 
    - In this case, the **test statistics `Z`** is `(S+0.5 - n/2) / sqrt(npq)`where p=0.5, q=0.5
