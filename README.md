@@ -414,7 +414,7 @@ One of the most important aspects of interpreting any statistical results (and o
 When performing more than one hypothesis test, your type-I error compounds. In order to correct for this, a common technique is called the `Bonferroni correction`. This correction is very conservative, but says that your new type-I error rate should be the error rate you actually want divided by the number of tests you are performing. Therefore, if you would like to hold an **allowable type-I error rate of 1%** (99% confidence means alpha=0.01) for each of 20 hypothesis tests, the Bonferroni corrected rate would be 0.01/20 = 0.0005. This would be the new rate you should use as your comparison to the p-value for each of the 20 tests to make your decision.
 
 ### Finite Population Correction
-When sampling **without replacement**(like HyperGeometric instead of Binomial) from more than `5%` of a finite population, you need to multiply the SE by this correction `sqrt((N-n) / (N-1))` because under these circumstances, the Central Limit Theorem doesn’t hold. **FPC** captures the difference between sampling **with** replacement and sampling **without** replacement. 
+When sampling **without replacement**(like HyperGeometric instead of Binomial) from more than `5%` of a finite population, you need to multiply the SE by this correction `sqrt((N-n) / (N-1))` because under these circumstances, the Central Limit Theorem doesn’t hold. **FPC** captures the difference between sampling **with** replacement and sampling **without** replacement and shrinks the SE. 
 
 -----------------------------------------------------------------------------------------------------
 # Who does give a shit to parameters ???
