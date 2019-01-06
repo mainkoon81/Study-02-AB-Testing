@@ -261,7 +261,7 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
      - Intercept: **77.619**
      - Clerical: 7.420
      - Custodial: 220.492
-   - The `intercept` is simply the **mean of the reference group**, Managers. The coefficients for the other two groups are the **differences** in the mean between the reference group and the other groups. for example, that the regression coefficient for Clerical is the difference between the mean for Clerical, 85.039, and the Intercept, or mean for Manager (85.039 – 77.619 = 7.420). The same works for Custodial. 
+   - The `intercept` is simply the **mean of the reference group**, Managers. The coefficients for the other two groups are the **differences** in the mean between the `reference group` and the `other groups`. For example, that the regression coefficient for Clerical is the difference between the mean for Clerical, 85.039, and the Intercept, or mean for Manager (85.039 – 77.619 = 7.420). The same works for Custodial. 
    - ANOVA reports **each mean** and a `p-value that says at least two are significantly different`.  
    - Regression reports **only one mean**(as an intercept), and the **differences** between that one and all other means, but the `p-values evaluate those specific comparisons`. 
    - It’s all the same model; the same information but presented in different ways. 
@@ -405,7 +405,10 @@ sample_mean = df_samp.query('drinks_coffee==True')['height'].mean()
 One of the most important aspects of interpreting any statistical results (and one that is frequently overlooked) is assuring that your sample is **truly representative** of your population of interest. Particularly in the way that data is collected today in the age of computers, `response bias` is so important to keep in mind. In the 2016 U.S election, polls conducted by many news media suggested a staggering difference from the reality of poll results. 
 > Two things to consider
  - a) Is my sample representative of the population?
- - b) What is the impact of large sample size on my result? (with large sizes, everything will be statistically significant..then we'd always choose to `Reject H0` with probability of alpha---[Type-I. Error]:FP) 
+ - b) What is the impact of large sample size on my result? (with large sizes, everything will be statistically significant..then we'd always choose to `Reject H0` with probability of alpha---[Type-I. Error]:FP)
+ - `Power: 1-β` ∝ sample_size ∝ Type-I(α)...always reject Ho. FP..Bitch!
+ - too small sample_size causes Type-II(β)...always accept Ho. FN..Slut! 
+
 
 ### Multi-testing Correction
 When performing more than one hypothesis test, your type-I error compounds. In order to correct for this, a common technique is called the `Bonferroni correction`. This correction is very conservative, but says that your new type-I error rate should be the error rate you actually want divided by the number of tests you are performing. Therefore, if you would like to hold an **allowable type-I error rate of 1%** (99% confidence means alpha=0.01) for each of 20 hypothesis tests, the Bonferroni corrected rate would be 0.01/20 = 0.0005. This would be the new rate you should use as your comparison to the p-value for each of the 20 tests to make your decision.
