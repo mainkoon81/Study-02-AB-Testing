@@ -171,7 +171,7 @@ aov_table = anova_lm(model, typ=2) ## twoway ANOVA ##
 ```
 The t-test formula depends on the **sample_mean** and the **sample_sd** of the data. It's basic form is `(The obv - the argu) / SE` where **'sample_sd'** quantifies scatter — how much the values vary from one another, while **'SE'** quantifies how precisely you know the true mean of the population. It takes into account both the value of the **sample_sd** and the **sample size**, thus by definition, **SE** is always smaller than the **sample_sd**.
  - Placing the `test statistics of H0` on the pdf chart and see where it is located. 
-<img src="https://user-images.githubusercontent.com/31917400/50740772-468ad080-11eb-11e9-8108-2ed1bc5dd28f.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/50741219-f7946980-11f1-11e9-87bc-70d260f52a3b.jpg" />  
 
  - If there is one categorical variable with multiple classes and whether it is consistent with the population distribution => **Chi-Sqr test**(parametric ? `No`)
  - If things are in a contingency table(counts from the 2 categoricals) and whether they are correlated => **Chi-Sqr test**(parametric ? `No`) 
