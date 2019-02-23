@@ -98,7 +98,8 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - so..each category takes up some `proportion area` on the distribution(pdf) chart..and data point on x-axis belong to each category..like a set of divisions 
    <img src="https://user-images.githubusercontent.com/31917400/48679735-d4532380-eb8b-11e8-8660-5bd890b30dac.jpg" />
 
- - references on what could be called "Bayesian (goodness of fit) p-values":
+> [NOTE]: Bayesian p-value is the comparison of a some metric calculated from your observed data with the same metric calculated from your simulated data (being generated with parameters drawn from the posterior distribution). In Gelmans words: "From a Bayesian context, a posterior p-value is the probability, given the data, that a future observation is more extreme (as measured by some test variable) than the data". For example, the number of zeros generated from a poisson based model could be such a metric or test statistic, and you could calculate how many of your simulated datasets have a larger fraction of zeros than you actually observe in your real data. The closer this value to 0.5, the better the values calculated from your simulated data distribute around the real observation.
+ - References on "Bayesian (goodness of fit) p-values":
    - Johnson, V. E., 2007. Bayesian Model Assessment Using Pivotal Quantities. Bayesian Analysis, 2(4), 719-734.
    - Gosselin, F., 2011. A New Calibrated Bayesian Internal Goodness-of-Fit Method: Sampled Posterior p-values as Simple and General p-values that Allow Double Use of the Data. Plos One, 6(3), e14770.
    - Zhang, J. L., 2014. Comparative investigation of three Bayesian p values. Computational Statistics and Data Analysis, 79, 277-291.
