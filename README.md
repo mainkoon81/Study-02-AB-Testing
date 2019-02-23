@@ -98,6 +98,11 @@ __[Note]: If From two samples,__ **F-Test** for Equality of two sample variances
    - so..each category takes up some `proportion area` on the distribution(pdf) chart..and data point on x-axis belong to each category..like a set of divisions 
    <img src="https://user-images.githubusercontent.com/31917400/48679735-d4532380-eb8b-11e8-8660-5bd890b30dac.jpg" />
 
+ - references on what could be called "Bayesian (goodness of fit) p-values":
+   - Johnson, V. E., 2007. Bayesian Model Assessment Using Pivotal Quantities. Bayesian Analysis, 2(4), 719-734.
+   - Gosselin, F., 2011. A New Calibrated Bayesian Internal Goodness-of-Fit Method: Sampled Posterior p-values as Simple and General p-values that Allow Double Use of the Data. Plos One, 6(3), e14770.
+   - Zhang, J. L., 2014. Comparative investigation of three Bayesian p values. Computational Statistics and Data Analysis, 79, 277-291.
+
 #### 3> Independence-Test with Contingency: `two categorical samples` (values are all about `Countings` like a histogram).
 <img src="https://user-images.githubusercontent.com/31917400/48679063-63a80900-eb83-11e8-8382-df9d11b0d641.jpg" />  
 
