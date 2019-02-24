@@ -39,9 +39,11 @@
 
 ### 1. Basic Sampling Test
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
+ <img src="https://user-images.githubusercontent.com/31917400/48678662-27be7500-eb7e-11e8-949e-396a7a87f092.jpg" />  
+
  - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
-<img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/53307069-76ba2b80-388c-11e9-8952-a7114dd5e097.jpg" />  
 
  - So in sampling distribution, always think about `sample size` and `variance`. In case of t-distribution,
 <img src="https://user-images.githubusercontent.com/31917400/48620729-018bb000-e999-11e8-8c69-6b1d57b4f486.jpg" />  
