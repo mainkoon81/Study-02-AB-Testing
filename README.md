@@ -289,7 +289,20 @@ Let's say you have a model with a categorical predictor, which divides your obse
   - In practice, the distinction b/w **fixed** and **random** comes down to which variable has the levels of out interest: fixed, then other variables: random.
 <img src="https://user-images.githubusercontent.com/31917400/50566760-1055d880-0d35-11e9-8937-699546536b1f.jpg" />  
 
+### Correlation & Interaction b/w predictors
+It’s really easy to mix up the concepts of association (a.k.a. correlation) and interaction.  Or to assume if two variables interact, they must be associated.  But it’s not actually true. Whether two variables are associated says nothing about whether they interact in their effect on a third variable.  Likewise, if two variables interact, they may or may not be associated.
 
+An interaction between two variables means the effect of one of those variables on a third variable is not constant—the effect differs at different values of the other.
+
+Let's see three situations for three variables: X1, X2, and Y. X1 is a continuous independent variable, X2 is a categorical independent variable, and Y is the dependent variable.  I chose these types of variables to make the plots easy to read, but any of these variables could be either categorical or continuous.
+
+In scenario 1, X1 and X2 are associated.  If you ignore Y, you can see the mean of X1 is lower when X2=0 than when X2=1.  But they do not interact in how they affect Y—the regression lines are parallel.  X1 has the same effect on Y (the slope) for both X2=1 and X2=0. A simple example is the relationship between height (X1) and weight (Y) in male (X2=1) and female (X2=0) teenagers.  There is a relationship between height (X1) and gender (X2), but for both genders, the relationship between height and weight is the same.
+
+In a second scenario, X1 and X2 are not associated—the mean of X1 is the same for both categories of X2.  But how X1 affects Y differs for the two values of X2—the definition of an interaction.  The slope of X1 on Y is greater for X2=1 than it is for X2=0, in which it is nearly flat. An example of this would be an experiment in which X1 was a pretest score and Y a posttest score.  Imagine participants were randomly assigned to a control (X2=1) or a training (X2=0) condition. If randomization is done well, the assigned condition (X2) should be unrelated to the pretest score (X1).  But they do interact—the relationship between pretest and posttest differs in the two conditions.
+
+In the third scenario, we’ve got both an association and an interaction.   X1 and X2 are associated—once again the mean of X1 is lower when X2=0 than when X2=1.  They also interact with Y—the slopes of the relationship between X1 and Y are different when X2=0 and X2=1.  So X2 affects the relationship between X1 and Y. A good example here would be if Y is the number of jobs in a county, X1 is the percentage of the workforce that holds a college degree, and X2 is whether the county is rural (X2=0) or metropolitan (X2=1).
+
+https://www.theanalysisfactor.com/interaction-association/
 
 
 ----------------------------------------------------------------------------------------------------------
