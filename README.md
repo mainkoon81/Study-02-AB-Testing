@@ -229,6 +229,16 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
        - Do changes in the independent variable(s) have significant effects on the dependent variables?
        - What are the relationships among the dependent variables?
        - What are the relationships among the independent variables?
+     - Assumptions
+       - SAMPLE_SIZE: Rule of thumb: the n in each cell > the number of DependentVariables
+       - NORMALITY: significance tests assume multivariate normality, however when cell size > ~30, things will be fine. 
+
+
+
+
+
+
+
 
 ### **Randomized Block** Design VS **Two factor Factorial** Design
  - two way ANOVA can refer to two distinct but related models. [y and X1(a/b), y and x2(1/2/3...)]
