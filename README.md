@@ -231,7 +231,12 @@ The t-test formula depends on the **sample_mean** and the **sample_sd** of the d
        - What are the relationships among the independent variables?
      - Assumptions
        - SAMPLE_SIZE: Rule of thumb: the n in each cell > the number of DependentVariables
-       - NORMALITY: significance tests assume multivariate normality, however when cell size > ~30, things will be fine. 
+       - NORMALITY: significance tests assume multivariate normality, however when cell size > ~30, things will be fine. ( univariate normality is not a guarantee of multivariate normality, but it does help)
+       - LINEARITY: Linear relationships among all pairs of Dependent Variables
+       - Homogeneity of regression: Covariates must have a homogeneity of regression effect (must have equal effects on the Dependent Variables across the groups.
+       - Homogeneity of variance-covariance matrix: The F test from Box’s M statistics should be interpreted cautiously because it is a highly sensitive test of the violation of the multivariate normality assumption. 
+       - Multicollinearity: it works best when the DependentVariables are only moderately correlated. When correlations are low, consider running separate ANOVAs.
+       - Outliers: It is sensitive to the effect of outliers (they impact on the Type I error rate). It can tolerate a few outliers, particularly if their there is a reasonable N . If there are too many outliers, consider deleting these cases or transforming the variables involved 
 
 
 
