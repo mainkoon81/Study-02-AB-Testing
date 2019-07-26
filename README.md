@@ -13,8 +13,9 @@ Inferential Statistics is about using our collected data to draw conclusions to 
  - Parameter: numeric summary about a population
  - Sample: subset of the population
  - Statistic: numeric summary about a sample
+``` 
 The way we perform inferential statistics is changing as technology evolves. Many career paths involving Machine Learning and Artificial Intelligence are aimed at using collected data to draw conclusions about entire populations at an individual level. 
-
+```
 
 ### Let's do inferential stats! Estimate population parameter from samples.
 #### Estimation techniques for finding 'population parameter θ'
