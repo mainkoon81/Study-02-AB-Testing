@@ -1,6 +1,21 @@
 # Study-AB-Testing
 
 ## [Intro: SO...Not Enough Samples ?] 
+
+Descriptive statistics is about describing our collected data.
+ - measures of center 
+ - measures of spread 
+ - shape of distribution
+ - outliers and plots of data
+ 
+Inferential Statistics is about using our collected data to draw conclusions to a larger population.
+ - Population: our entire group of interest.
+ - Parameter: numeric summary about a population
+ - Sample: subset of the population
+ - Statistic: numeric summary about a sample
+The way we perform inferential statistics is changing as technology evolves. Many career paths involving Machine Learning and Artificial Intelligence are aimed at using collected data to draw conclusions about entire populations at an individual level. 
+
+
 ### Let's do inferential stats! Estimate population parameter from samples.
 #### Estimation techniques for finding 'population parameter θ'
  - 1.Maximum Likelihood Estimation
