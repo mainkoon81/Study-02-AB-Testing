@@ -319,6 +319,10 @@ In the third scenario, we’ve got both an association and an interaction.   X1 
 
 https://www.theanalysisfactor.com/interaction-association/
 
+What ultimately matters is not much the strong correlations(multicollinearity), but whatever this will affect the variance of the beta coefficients `Var(β)` because its larger variance indicates a less precise estimator..(a larger confidence intervals) and, therefore less accurate model. 
+## Whether high multicollinearity induces a too large `Var(β)` depends on the sizes of the error variance `σ2` or `SST`, a measure of the total sample variation in the `Y`.
+
+
 
 ----------------------------------------------------------------------------------------------------------
 ## However, using our computer,
