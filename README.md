@@ -55,7 +55,7 @@ The way we perform inferential statistics is changing as technology evolves. Man
 
 ### 1. Basic Sampling Test
  - When we have large sample sizes (n > 30), and variance is known: **z-test**
- <img src="https://user-images.githubusercontent.com/31917400/48678662-27be7500-eb7e-11e8-949e-396a7a87f092.jpg" />  
+ <img src="https://user-images.githubusercontent.com/31917400/38500148-76cd5148-3c01-11e8-85a0-a90adf7ed19e.jpg" />  
 
  - When we have less sample sizes(n < 30), and the variance is unknown: **t-test**
  - Both methods assume a **normal distribution** of the data(Independent, Identically distributed)
