@@ -171,6 +171,11 @@ It refers the porbability to `reject H0` when it is correct to do so...**Not mak
 
 ### 5. Popular Questions
  - whether two variables (n = 2) are correlated (i.e., associated) => **Correlation test** between two variables. 
+   - **Pearson correlation coefficient** can be used to summarize the strength of the linear relationship between two data samples.
+   `rho = cov(X,y) / (stdv(X)*stdv(y))`
+   - **Spearman’s correlation coefficient** can summarize the strength between the two data samples in terms of: **Non-linear relationship**, such that the relationship is stronger or weaker across the distribution of the variables. (Further, the two variables being considered may have a non-Gaussian distribution?) strong->"Nonlinear", weak->"linear". Instead of calculating the coefficient using covariance and standard deviations on the samples themselves, these statistics are calculated from the relative rank of values on each sample. This is a common approach used in non-parametric statistics. **`If you are unsure of the distribution and possible relationships between two variables, Spearman correlation coefficient is a good tool to use.`**
+   `rho = cov(rank(X), rank(y)) / (stdv(rank(X)*stdv(rank(y)))`
+     
  - whether multiple variables (n > 2) are correlated => **Correlation matrix** between multiple variables. 
  - whether two groups (n = 2) of samples differ from each other => **t-test**(parametric: Need of Dist_Assumption). 
    - sample_mean VS population_mean (one sample test)
